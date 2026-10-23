@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "actor": "melee",
+  "generation": "Built-in image_gen; all 15 poses are independently articulated generated raster artwork. Python performs only alpha-based sprite separation, uniform scaling, registration, packing, and QA preview assembly. No procedural pose synthesis.",
+  "reference": "res://assets/enemies/melee.png",
+  "orientation": "left",
+  "frame_size": [
+    512,
+    512
+  ],
+  "root": [
+    256,
+    474
+  ],
+  "registration": "Horizontal origin is the manually identified physical pelvis, not the bounding box or weapon; vertical origin is planted sole / collapse contact. All frames share one uniform actor scale.",
+  "native_body_height": 274,
+  "native_body_height_definition": "Approximate upright helmet-top to sole height, excluding raised weapon or shield; use as reference when scaling actor to game world.",
+  "uniform_scale": 0.9,
+  "sheet": {
+    "file": "spritesheet.png",
+    "size": [
+      2560,
+      1536
+    ],
+    "columns": 5,
+    "rows": 3,
+    "order": "row-major"
+  },
+  "animations": {
+    "idle": {
+      "frames": [
+        "frames/idle_00.webp",
+        "frames/idle_01.webp"
+      ],
+      "fps": 5,
+      "loop": true,
+      "durations_ms": [
+        200,
+        200
+      ]
+    },
+    "move": {
+      "frames": [
+        "frames/move_00.webp",
+        "frames/move_01.webp",
+        "frames/move_02.webp",
+        "frames/move_03.webp"
+      ],
+      "fps": 9,
+      "loop": true,
+      "durations_ms": [
+        111,
+        111,
+        111,
+        111
+      ]
+    },
+    "attack": {
+      "frames": [
+        "frames/attack_00.webp",
+        "frames/attack_01.webp",
+        "frames/attack_02.webp"
+      ],
+      "fps": 8,
+      "loop": false,
+      "durations_ms": [
+        125,
+        125,
+        125
+      ],
+      "windup_frame": 0,
+      "contact_frame": 1,
+      "recovery_frame": 2,
+      "contact_direction": "left",
+      "lock_facing_on_start": true,
+      "notes": "Animation only; reuse existing combat timing and collision."
+    },
+    "hurt": {
+      "frames": [
+        "frames/hurt_00.webp",
+        "frames/hurt_01.webp"
+      ],
+      "fps": 10,
+      "loop": false,
+      "durations_ms": [
+        100,
+        100
+      ]
+    },
+    "death": {
+      "frames": [
+        "frames/death_00.webp",
+        "frames/death_01.webp",
+        "frames/death_02.webp",
+        "frames/death_03.webp"
+      ],
+      "fps": 7,
+      "loop": false,
+      "durations_ms": [
+        143,
+        143,
+        143,
+        143
+      ],
+      "hold_last_frame": true
+    }
+  },
+  "frames": [
+    {
+      "index": 0,
+      "group": "idle",
+      "group_index": 0,
+      "file": "frames/idle_00.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 1,
+      "source_crop": [
+        11,
+        26,
+        318,
+        335
+      ],
+      "source_pelvis_x": 151,
+      "source_ground_y": 300,
+      "uniform_scale": 0.9,
+      "placement": [
+        120,
+        204
+      ],
+      "alpha_bbox": [
+        125,
+        208,
+        393,
+        482
+      ],
+      "sha256": "68b11ede83ac3ebe96151f46b53e03d2c70b0437a5f1672759169b7273266ab4"
+    },
+    {
+      "index": 1,
+      "group": "idle",
+      "group_index": 1,
+      "file": "frames/idle_01.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 2,
+      "source_crop": [
+        335,
+        15,
+        635,
+        334
+      ],
+      "source_pelvis_x": 157,
+      "source_ground_y": 310,
+      "uniform_scale": 0.9,
+      "placement": [
+        115,
+        195
+      ],
+      "alpha_bbox": [
+        117,
+        196,
+        382,
+        482
+      ],
+      "sha256": "87d3927744da8b0ae261338921a1f97f6a93f635755a7917953132f84489b02e"
+    },
+    {
+      "index": 2,
+      "group": "move",
+      "group_index": 0,
+      "file": "frames/move_00.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 3,
+      "source_crop": [
+        638,
+        21,
+        1007,
+        341
+      ],
+      "source_pelvis_x": 183,
+      "source_ground_y": 311,
+      "uniform_scale": 0.9,
+      "placement": [
+        91,
+        194
+      ],
+      "alpha_bbox": [
+        95,
+        197,
+        420,
+        479
+      ],
+      "sha256": "28910a0399e709261794918a9f18e477ab2abb4105b5c669eea791e5410b02eb"
+    },
+    {
+      "index": 3,
+      "group": "move",
+      "group_index": 1,
+      "file": "frames/move_01.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 4,
+      "source_crop": [
+        1008,
+        13,
+        1263,
+        332
+      ],
+      "source_pelvis_x": 153,
+      "source_ground_y": 310,
+      "uniform_scale": 0.9,
+      "placement": [
+        118,
+        195
+      ],
+      "alpha_bbox": [
+        119,
+        196,
+        344,
+        478
+      ],
+      "sha256": "744f7bfb5fcfc9f4cb1ad840cd380d18a81a372fa05e8d59b444ee4d07989854"
+    },
+    {
+      "index": 4,
+      "group": "move",
+      "group_index": 2,
+      "file": "frames/move_02.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 5,
+      "source_crop": [
+        1274,
+        32,
+        1612,
+        332
+      ],
+      "source_pelvis_x": 180,
+      "source_ground_y": 291,
+      "uniform_scale": 0.9,
+      "placement": [
+        94,
+        212
+      ],
+      "alpha_bbox": [
+        97,
+        213,
+        393,
+        477
+      ],
+      "sha256": "09a055e37850112ec10ba9f76ca11990803e0f5b4cc50552752e16f0f49d2357"
+    },
+    {
+      "index": 5,
+      "group": "move",
+      "group_index": 3,
+      "file": "frames/move_03.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 6,
+      "source_crop": [
+        12,
+        333,
+        304,
+        648
+      ],
+      "source_pelvis_x": 162,
+      "source_ground_y": 306,
+      "uniform_scale": 0.9,
+      "placement": [
+        110,
+        199
+      ],
+      "alpha_bbox": [
+        115,
+        204,
+        373,
+        482
+      ],
+      "sha256": "04ed586e3b87c82e48331e97f78bb98bfb8d33733ebcfd31fb54ca66e08dfb8d"
+    },
+    {
+      "index": 6,
+      "group": "attack",
+      "group_index": 0,
+      "file": "frames/attack_00.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 7,
+      "source_crop": [
+        305,
+        322,
+        631,
+        651
+      ],
+      "source_pelvis_x": 205,
+      "source_ground_y": 320,
+      "uniform_scale": 0.9,
+      "placement": [
+        72,
+        186
+      ],
+      "alpha_bbox": [
+        74,
+        186,
+        362,
+        480
+      ],
+      "sha256": "0bc299c6e52d64406834693af5739739adecbe196f67fe41b65bd81023a14f24"
+    },
+    {
+      "index": 7,
+      "group": "attack",
+      "group_index": 1,
+      "file": "frames/attack_01.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 8,
+      "source_crop": [
+        557,
+        390,
+        998,
+        650
+      ],
+      "source_pelvis_x": 271,
+      "source_ground_y": 251,
+      "uniform_scale": 0.9,
+      "placement": [
+        12,
+        248
+      ],
+      "alpha_bbox": [
+        16,
+        249,
+        408,
+        481
+      ],
+      "sha256": "139de6d38e6b6f22d0d04a86eee83c069b9f6e42d58ec346b4b19a601bb026e5"
+    },
+    {
+      "index": 8,
+      "group": "attack",
+      "group_index": 2,
+      "file": "frames/attack_02.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 9,
+      "source_crop": [
+        994,
+        388,
+        1318,
+        652
+      ],
+      "source_pelvis_x": 175,
+      "source_ground_y": 255,
+      "uniform_scale": 0.9,
+      "placement": [
+        98,
+        244
+      ],
+      "alpha_bbox": [
+        98,
+        244,
+        390,
+        478
+      ],
+      "sha256": "732b6a3e14c18b43ea2f629c91c587c719981531d10f3530f62d37a4667869bc"
+    },
+    {
+      "index": 9,
+      "group": "hurt",
+      "group_index": 0,
+      "file": "frames/hurt_00.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 10,
+      "source_crop": [
+        1316,
+        339,
+        1619,
+        654
+      ],
+      "source_pelvis_x": 168,
+      "source_ground_y": 306,
+      "uniform_scale": 0.9,
+      "placement": [
+        105,
+        199
+      ],
+      "alpha_bbox": [
+        105,
+        199,
+        378,
+        479
+      ],
+      "sha256": "bb9e0b48008363cc0e6d1ea05512fb14f673f4401645f286dd4a47f2e3326a08"
+    },
+    {
+      "index": 10,
+      "group": "hurt",
+      "group_index": 1,
+      "file": "frames/hurt_01.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 11,
+      "source_crop": [
+        13,
+        670,
+        318,
+        953
+      ],
+      "source_pelvis_x": 166,
+      "source_ground_y": 274,
+      "uniform_scale": 0.9,
+      "placement": [
+        107,
+        227
+      ],
+      "alpha_bbox": [
+        111,
+        228,
+        378,
+        482
+      ],
+      "sha256": "ab5fcdb627f3dc3ae39954c119e880c627915e4c67fba757bf693ebcbe2e6fb1"
+    },
+    {
+      "index": 11,
+      "group": "death",
+      "group_index": 0,
+      "file": "frames/death_00.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 12,
+      "source_crop": [
+        362,
+        674,
+        615,
+        947
+      ],
+      "source_pelvis_x": 140,
+      "source_ground_y": 264,
+      "uniform_scale": 0.9,
+      "placement": [
+        130,
+        236
+      ],
+      "alpha_bbox": [
+        134,
+        240,
+        355,
+        479
+      ],
+      "sha256": "3ac521af21f85370a9dcf78f30c290e946c1d82b898e902e8be28a5280537fb5"
+    },
+    {
+      "index": 12,
+      "group": "death",
+      "group_index": 1,
+      "file": "frames/death_01.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 13,
+      "source_crop": [
+        624,
+        715,
+        986,
+        943
+      ],
+      "source_pelvis_x": 205,
+      "source_ground_y": 219,
+      "uniform_scale": 0.9,
+      "placement": [
+        72,
+        277
+      ],
+      "alpha_bbox": [
+        73,
+        277,
+        395,
+        479
+      ],
+      "sha256": "627834c8974a442eb3a9281ffd24e4176f33cddc3053c7dc0c6a87788b0e5af4"
+    },
+    {
+      "index": 13,
+      "group": "death",
+      "group_index": 2,
+      "file": "frames/death_02.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 14,
+      "source_crop": [
+        967,
+        803,
+        1300,
+        944
+      ],
+      "source_pelvis_x": 172,
+      "source_ground_y": 132,
+      "uniform_scale": 0.9,
+      "placement": [
+        101,
+        355
+      ],
+      "alpha_bbox": [
+        103,
+        358,
+        401,
+        478
+      ],
+      "sha256": "e79cec60200d47ae443ad44b6a2133fef5de65ec0554f168d441d6bf51208c5d"
+    },
+    {
+      "index": 14,
+      "group": "death",
+      "group_index": 3,
+      "file": "frames/death_03.png",
+      "size": [
+        512,
+        512
+      ],
+      "root": [
+        256,
+        474
+      ],
+      "source_pose": 15,
+      "source_crop": [
+        1297,
+        803,
+        1619,
+        948
+      ],
+      "source_pelvis_x": 171,
+      "source_ground_y": 136,
+      "uniform_scale": 0.9,
+      "placement": [
+        102,
+        352
+      ],
+      "alpha_bbox": [
+        102,
+        356,
+        392,
+        478
+      ],
+      "sha256": "13b5554e2895cddbbfb34fa3a6c005c9e34d1ca70db12ffa4991ed3c493f2037"
+    }
+  ],
+  "preserve_original": true,
+  "notes": [
+    "No game code, AI, existing assets, or original images modified.",
+    "RGBA files use genuine generated transparency. Neighbor silhouette pixels are removed by alpha-connected-component ownership, and fully transparent RGB is zeroed.",
+    "Animated GIFs are QA previews on a dark background with root markers; game-ready images are frames/*.png and spritesheet.png.",
+    "Attack and hurt groups are one-shot. Death plays once and holds last frame. Source facing is left; mirror whole registered frame for right-facing."
+  ]
+}
