@@ -1,0 +1,58 @@
+[
+  {
+    "name": "hit_light",
+    "duration": 0.2,
+    "peak": 0.7,
+    "layers": [
+      "inharmonic metal transient",
+      "low body thump",
+      "high-frequency debris tail"
+    ]
+  },
+  {
+    "name": "hit_heavy",
+    "duration": 0.34,
+    "peak": 0.7,
+    "layers": [
+      "inharmonic metal transient",
+      "low body thump",
+      "high-frequency debris tail"
+    ]
+  },
+  {
+    "name": "armor_hit",
+    "duration": 0.19,
+    "peak": 0.7,
+    "layers": [
+      "inharmonic metal transient",
+      "low body thump",
+      "high-frequency debris tail"
+    ]
+  },
+  {
+    "name": "armor_break",
+    "duration": 0.39,
+    "peak": 0.7,
+    "layers": [
+      "inharmonic metal transient",
+      "low body thump",
+      "high-frequency debris tail"
+    ]
+  },
+  {
+    "name": "swing",
+    "duration": 0.14,
+    "peak": 0.7,
+    "layers": [
+      "air whoosh only; no impact thump"
+    ]
+  },
+  {
+    "name": "heavy",
+    "duration": 0.21,
+    "peak": 0.7,
+    "layers": [
+      "air whoosh only; no impact thump"
+    ]
+  }
+]

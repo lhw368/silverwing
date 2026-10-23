@@ -1,0 +1,82 @@
+{
+  "melee": {
+    "file": "enemies/melee.png",
+    "size": [
+      503,
+      462
+    ],
+    "source_box": [
+      36,
+      52,
+      539,
+      514
+    ],
+    "suggested_anchor": "bottom_center",
+    "facing": "left",
+    "frame_count": 1
+  },
+  "shield": {
+    "file": "enemies/shield.png",
+    "size": [
+      522,
+      496
+    ],
+    "source_box": [
+      558,
+      19,
+      1080,
+      515
+    ],
+    "suggested_anchor": "bottom_center",
+    "facing": "left",
+    "frame_count": 1
+  },
+  "drone": {
+    "file": "enemies/drone.png",
+    "size": [
+      395,
+      257
+    ],
+    "source_box": [
+      1114,
+      149,
+      1509,
+      406
+    ],
+    "suggested_anchor": "center",
+    "facing": "left",
+    "frame_count": 1
+  },
+  "boss": {
+    "file": "enemies/boss.png",
+    "size": [
+      757,
+      492
+    ],
+    "source_box": [
+      12,
+      514,
+      769,
+      1006
+    ],
+    "suggested_anchor": "bottom_center",
+    "facing": "left",
+    "frame_count": 1
+  },
+  "repair_npc": {
+    "file": "enemies/repair_npc.png",
+    "size": [
+      267,
+      306
+    ],
+    "source_box": [
+      802,
+      679,
+      1069,
+      985
+    ],
+    "suggested_anchor": "bottom_center",
+    "facing": "three_quarter_right",
+    "frame_count": 1
+  }
+}
