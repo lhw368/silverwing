@@ -1,0 +1,79 @@
+{
+  "file": "mine.webp",
+  "size": [
+    98,
+    53
+  ],
+  "root": [
+    49,
+    48
+  ],
+  "source": "qa/v08-enemy-art/minelayer-source.webp",
+  "source_pose": 8,
+  "source_crop": [
+    658,
+    997,
+    756,
+    1050
+  ],
+  "source_polygon": [
+    [
+      667,
+      1017
+    ],
+    [
+      676,
+      1008
+    ],
+    [
+      692,
+      1003
+    ],
+    [
+      711,
+      1001
+    ],
+    [
+      731,
+      1007
+    ],
+    [
+      746,
+      1017
+    ],
+    [
+      751,
+      1028
+    ],
+    [
+      748,
+      1035
+    ],
+    [
+      739,
+      1041
+    ],
+    [
+      723,
+      1045
+    ],
+    [
+      692,
+      1045
+    ],
+    [
+      676,
+      1041
+    ],
+    [
+      667,
+      1034
+    ],
+    [
+      664,
+      1026
+    ]
+  ],
+  "recommended_width": 38,
+  "notes": "Deterministic silhouette cutout of the generated deployed disk. No synthesized or repainted pixels."
+}

@@ -1,0 +1,168 @@
+{
+  "format_version": 1,
+  "asset_set": "Silverwing Cooling Ring original three-depth parallax",
+  "generator": "Built-in image_gen; three independent generations visually guided by the approved Silverwing concept",
+  "base_viewport": [
+    1280,
+    720
+  ],
+  "game_floor_y": 574,
+  "max_camera_x": 14000,
+  "composition_order": [
+    "far",
+    "mid",
+    "world_and_actors",
+    "foreground",
+    "HUD"
+  ],
+  "layers": [
+    {
+      "id": "far",
+      "path": "far-reactor-chamber.webp",
+      "source": "qa/coolant-art-source/far-reactor-original.png",
+      "size": [
+        1920,
+        720
+      ],
+      "draw_origin": [
+        0,
+        0
+      ],
+      "camera_scroll_scale": 0.04,
+      "draw_tint": [
+        0.72,
+        0.84,
+        0.9,
+        1
+      ],
+      "repeat": false,
+      "strategy": "Opaque overscan plate. At camera 14000 the right extent remains 1360, 80px beyond the viewport. Never tile or stretch to viewport.",
+      "packing": "Uniform resize from 1672x941 to 1920x1081, crop y=140..860. Opaque WebP quality 94."
+    },
+    {
+      "id": "mid",
+      "path": "mid-coolant-gantries-repeat.webp",
+      "source": "qa/coolant-art-source/mid-pipes-original.png",
+      "size": [
+        2560,
+        720
+      ],
+      "draw_origin": [
+        0,
+        -40
+      ],
+      "camera_scroll_scale": 0.34,
+      "draw_tint": [
+        0.76,
+        0.85,
+        0.95,
+        1
+      ],
+      "repeat": true,
+      "repeat_period_px": 2560,
+      "strategy": "1280px structural cutout followed by its horizontal mirror; identical RGBA edge columns at both joins. Draw the complete 2560px repeat.",
+      "packing": "Near-uniform 16:9 resize of original 1672x941 to 1280x720, then reflection. True source alpha retained."
+    },
+    {
+      "id": "foreground",
+      "path": "foreground-coolant-conduits-repeat.webp",
+      "source": "qa/coolant-art-source/foreground-conduits-original.png",
+      "size": [
+        2560,
+        118
+      ],
+      "draw_origin": [
+        0,
+        622
+      ],
+      "camera_scroll_scale": 1.15,
+      "draw_tint": [
+        0.9,
+        0.96,
+        1,
+        1
+      ],
+      "repeat": true,
+      "repeat_period_px": 2560,
+      "strategy": "Low standalone conduit strip, mirrored to exact RGBA seams. Top is >=622, at least 48px below feet y574. Draw after actors, before HUD.",
+      "packing": "Original 2172x724 cropped to y=514..714, containing all alpha>8. Only faint generator dust outside crop discarded; retained source alpha untouched. Resize 1280x118 (<0.2% aspect rounding), then reflection."
+    }
+  ],
+  "import_recommendation": {
+    "filter": "linear",
+    "mipmaps": true,
+    "compression": "Opaque far: WebP quality 94. Transparent layers: original RGBA PNG, lossless. No color-key and no palette quantization.",
+    "repeat": "Disable texture_repeat when manually drawing full repeat copies."
+  },
+  "limitations": [
+    "Mid and foreground periodicity uses intentional reflection rather than invented seamless topology.",
+    "Far coverage assumes 1280px viewport and camera<=14000 at factor 0.04.",
+    "Generated cutout surfaces use partial alpha, mostly 251-253, preserved rather than flattened.",
+    "Foreground padding contained isolated alpha<=8 generator dust; trimmed outside visible pipe silhouette during packing."
+  ],
+  "qa": {
+    "far-reactor-chamber.webp": {
+      "dimensions": [
+        1920,
+        720
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "transparent_pixels": 0,
+      "alpha_gt_8_bbox": [
+        0,
+        0,
+        1920,
+        720
+      ],
+      "left_right_seam_max_rgba_error": 206,
+      "bytes": 456430,
+      "sha256": "0284cd0173e37a4104303cfb6087f0f26d8b37e01c210ebc5974bf65c1a69699"
+    },
+    "mid-coolant-gantries-repeat.png": {
+      "dimensions": [
+        2560,
+        720
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 982996,
+      "alpha_gt_8_bbox": [
+        0,
+        7,
+        2560,
+        697
+      ],
+      "left_right_seam_max_rgba_error": 0,
+      "bytes": 1859818,
+      "sha256": "8ab5a5bff8ebe1d33026b3e4b660e2fe340e651ede4893c7eb9379ee2f832297"
+    },
+    "foreground-coolant-conduits-repeat.png": {
+      "dimensions": [
+        2560,
+        118
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 22096,
+      "alpha_gt_8_bbox": [
+        0,
+        0,
+        2560,
+        118
+      ],
+      "left_right_seam_max_rgba_error": 0,
+      "bytes": 452151,
+      "sha256": "b13483eab6ed0be6ef0b07bcba3c321cdde66f40f8684346fedf52e60a4c15b6"
+    }
+  }
+}
