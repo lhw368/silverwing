@@ -1,0 +1,690 @@
+{
+  "schema": "mecha-furnace-phase2/1",
+  "enemy": "furnace_boss",
+  "form": "broken_armor_laser_axe",
+  "source_facing": "left",
+  "canvas_px": [
+    768,
+    768
+  ],
+  "frame_size": [
+    768,
+    768
+  ],
+  "anchor_px": [
+    384,
+    710
+  ],
+  "root": [
+    384,
+    710
+  ],
+  "anchor_fraction": [
+    0.5,
+    0.9244791666666666
+  ],
+  "native_body_height": 438,
+  "generation_method": "Built-in image_gen with current phase1 furnace boss as explicit visual reference. Eight independently drawn action poses; no jitter, mirroring or palette-swapped pose substitutes.",
+  "extraction_method": "Deterministic connected-alpha selection, alpha <=10 and noise components <6 pixels removed, subject crop, one uniform Lanczos downscale and root registration. Optional transition extracted using documented polygon along its foreground silhouette. No pixel painting, recoloring or synthesized body parts.",
+  "animation_groups": {
+    "idle": {
+      "loop": true,
+      "frames": [
+        "idle/01.webp"
+      ],
+      "durations_ms": [
+        240
+      ],
+      "fps": 4.166666666666667
+    },
+    "move": {
+      "loop": true,
+      "frames": [
+        "move/01.webp"
+      ],
+      "durations_ms": [
+        160
+      ],
+      "fps": 6.25
+    },
+    "axe_windup": {
+      "loop": false,
+      "frames": [
+        "axe_windup/01.webp"
+      ],
+      "durations_ms": [
+        640
+      ],
+      "fps": 1.5625
+    },
+    "axe_attack": {
+      "loop": false,
+      "frames": [
+        "axe_attack/01.webp"
+      ],
+      "durations_ms": [
+        230
+      ],
+      "fps": 4.3478260869565215
+    },
+    "recover": {
+      "loop": false,
+      "frames": [
+        "recover/01.webp"
+      ],
+      "durations_ms": [
+        380
+      ],
+      "fps": 2.6315789473684212
+    },
+    "hurt": {
+      "loop": false,
+      "frames": [
+        "hurt/01.webp"
+      ],
+      "durations_ms": [
+        170
+      ],
+      "fps": 5.882352941176471
+    },
+    "phase_transition": {
+      "loop": false,
+      "frames": [
+        "phase_transition/01.webp"
+      ],
+      "durations_ms": [
+        550
+      ],
+      "fps": 1.8181818181818181
+    },
+    "death": {
+      "loop": false,
+      "frames": [
+        "death/01.webp"
+      ],
+      "durations_ms": [
+        650
+      ],
+      "fps": 1.5384615384615385
+    }
+  },
+  "frames": [
+    {
+      "animation": "idle",
+      "frame": 1,
+      "path": "idle/01.webp",
+      "duration_ms": 240,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/phase2-motion-combat.webp",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": 1,
+      "source_clip_polygon": null,
+      "source_alpha_bbox_xyxy": [
+        20,
+        133,
+        685,
+        588
+      ],
+      "source_registration_root_px": [
+        340,
+        585
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "actual_resize_scale_xy": [
+        0.9699248120300752,
+        0.9692307692307692
+      ],
+      "paste_top_left_px": [
+        74,
+        272
+      ],
+      "output_alpha_bbox_xyxy": [
+        74,
+        272,
+        719,
+        713
+      ],
+      "sha256": "33fa939bde17ae6661e1bfdbd114243ee37491d12540fb931aee842274099e25",
+      "nonzero_alpha_pixels": 153018,
+      "weapon": {
+        "laser_axe_blade_center_px": [
+          673,
+          640
+        ],
+        "shoulder_px": [
+          484,
+          411
+        ],
+        "laser_axe_cutting_edge_px": []
+      }
+    },
+    {
+      "animation": "move",
+      "frame": 1,
+      "path": "move/01.webp",
+      "duration_ms": 160,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/phase2-motion-combat.webp",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": 2,
+      "source_clip_polygon": null,
+      "source_alpha_bbox_xyxy": [
+        628,
+        141,
+        1237,
+        583
+      ],
+      "source_registration_root_px": [
+        935,
+        580
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "actual_resize_scale_xy": [
+        0.9704433497536946,
+        0.9705882352941176
+      ],
+      "paste_top_left_px": [
+        86,
+        284
+      ],
+      "output_alpha_bbox_xyxy": [
+        86,
+        284,
+        677,
+        713
+      ],
+      "sha256": "ff94bb6cd9f3d7b849fb9d93d9b3d85318693254055c73bfcbe46ef9d68e9880",
+      "nonzero_alpha_pixels": 132923,
+      "weapon": {
+        "laser_axe_blade_center_px": [
+          641,
+          610
+        ],
+        "shoulder_px": [
+          471,
+          410
+        ],
+        "laser_axe_cutting_edge_px": []
+      }
+    },
+    {
+      "animation": "axe_windup",
+      "frame": 1,
+      "path": "axe_windup/01.webp",
+      "duration_ms": 640,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/phase2-motion-combat.webp",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": 16,
+      "source_clip_polygon": null,
+      "source_alpha_bbox_xyxy": [
+        50,
+        616,
+        631,
+        1172
+      ],
+      "source_registration_root_px": [
+        355,
+        1169
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "actual_resize_scale_xy": [
+        0.9707401032702238,
+        0.9694244604316546
+      ],
+      "paste_top_left_px": [
+        88,
+        174
+      ],
+      "output_alpha_bbox_xyxy": [
+        88,
+        174,
+        652,
+        713
+      ],
+      "sha256": "e7c2093ecf91f4aed132f8c3c218304abcf721729a0353e2bbd3bd523a4d78e6",
+      "nonzero_alpha_pixels": 138169,
+      "weapon": {
+        "laser_axe_blade_center_px": [
+          501,
+          243
+        ],
+        "shoulder_px": [
+          470,
+          372
+        ],
+        "laser_axe_cutting_edge_px": [
+          [
+            373,
+            198
+          ],
+          [
+            445,
+            186
+          ],
+          [
+            525,
+            226
+          ],
+          [
+            580,
+            294
+          ]
+        ]
+      }
+    },
+    {
+      "animation": "axe_attack",
+      "frame": 1,
+      "path": "axe_attack/01.webp",
+      "duration_ms": 230,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/phase2-motion-combat.webp",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": 19,
+      "source_clip_polygon": null,
+      "source_alpha_bbox_xyxy": [
+        610,
+        788,
+        1238,
+        1175
+      ],
+      "source_registration_root_px": [
+        995,
+        1169
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "actual_resize_scale_xy": [
+        0.9697452229299363,
+        0.9689922480620154
+      ],
+      "paste_top_left_px": [
+        11,
+        341
+      ],
+      "output_alpha_bbox_xyxy": [
+        11,
+        341,
+        620,
+        716
+      ],
+      "sha256": "9976f979087be26def0fd3ae6865f69ee8defd61e8ad20058e9890c5bb7d4e3b",
+      "nonzero_alpha_pixels": 115593,
+      "weapon": {
+        "laser_axe_blade_center_px": [
+          53,
+          636
+        ],
+        "shoulder_px": [
+          386,
+          454
+        ],
+        "laser_axe_cutting_edge_px": [
+          [
+            23,
+            551
+          ],
+          [
+            21,
+            600
+          ],
+          [
+            49,
+            658
+          ],
+          [
+            111,
+            692
+          ],
+          [
+            184,
+            707
+          ]
+        ]
+      }
+    },
+    {
+      "animation": "recover",
+      "frame": 1,
+      "path": "recover/01.webp",
+      "duration_ms": 380,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/phase2-reactions.webp",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": 1,
+      "source_clip_polygon": null,
+      "source_alpha_bbox_xyxy": [
+        37,
+        159,
+        643,
+        609
+      ],
+      "source_registration_root_px": [
+        360,
+        607
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "actual_resize_scale_xy": [
+        0.9801980198019802,
+        0.98
+      ],
+      "paste_top_left_px": [
+        67,
+        271
+      ],
+      "output_alpha_bbox_xyxy": [
+        67,
+        271,
+        661,
+        712
+      ],
+      "sha256": "8be1ee7ea76763d165581c08ce02657dc2801acaed85ad7ed0d1df80a29318b2",
+      "nonzero_alpha_pixels": 151048,
+      "weapon": {
+        "laser_axe_blade_center_px": [
+          397,
+          662
+        ],
+        "shoulder_px": [
+          480,
+          399
+        ],
+        "laser_axe_cutting_edge_px": []
+      }
+    },
+    {
+      "animation": "hurt",
+      "frame": 1,
+      "path": "hurt/01.webp",
+      "duration_ms": 170,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/phase2-reactions.webp",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": 2,
+      "source_clip_polygon": null,
+      "source_alpha_bbox_xyxy": [
+        635,
+        171,
+        1250,
+        623
+      ],
+      "source_registration_root_px": [
+        950,
+        605
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "actual_resize_scale_xy": [
+        0.9804878048780488,
+        0.9800884955752213
+      ],
+      "paste_top_left_px": [
+        75,
+        285
+      ],
+      "output_alpha_bbox_xyxy": [
+        75,
+        285,
+        678,
+        728
+      ],
+      "sha256": "910c9afe163df2d0547851e26c0281aa58baabcb16193ba412e0b1bffb9e0567",
+      "nonzero_alpha_pixels": 147741,
+      "weapon": {
+        "laser_axe_blade_center_px": [
+          638,
+          684
+        ],
+        "shoulder_px": [
+          512,
+          408
+        ],
+        "laser_axe_cutting_edge_px": []
+      }
+    },
+    {
+      "animation": "phase_transition",
+      "frame": 1,
+      "path": "phase_transition/01.webp",
+      "duration_ms": 550,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/phase2-reactions.webp",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": null,
+      "source_clip_polygon": [
+        [
+          0,
+          670
+        ],
+        [
+          746,
+          670
+        ],
+        [
+          746,
+          1015
+        ],
+        [
+          720,
+          1049
+        ],
+        [
+          710,
+          1070
+        ],
+        [
+          701,
+          1085
+        ],
+        [
+          592,
+          1012
+        ],
+        [
+          615,
+          1115
+        ],
+        [
+          630,
+          1254
+        ],
+        [
+          0,
+          1254
+        ]
+      ],
+      "source_alpha_bbox_xyxy": [
+        19,
+        710,
+        720,
+        1155
+      ],
+      "source_registration_root_px": [
+        345,
+        1152
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "actual_resize_scale_xy": [
+        0.9800285306704708,
+        0.9797752808988764
+      ],
+      "paste_top_left_px": [
+        65,
+        277
+      ],
+      "output_alpha_bbox_xyxy": [
+        65,
+        277,
+        752,
+        713
+      ],
+      "sha256": "b725ee7ceb18c0d0373b3598eadc94b73bb4a7c277eda660e119aa816ce26530",
+      "nonzero_alpha_pixels": 168349,
+      "weapon": {
+        "laser_axe_blade_center_px": [
+          711,
+          581
+        ],
+        "shoulder_px": [
+          500,
+          386
+        ],
+        "laser_axe_cutting_edge_px": []
+      }
+    },
+    {
+      "animation": "death",
+      "frame": 1,
+      "path": "death/01.webp",
+      "duration_ms": 650,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/phase2-death.webp",
+      "source_image_size_px": [
+        1536,
+        1024
+      ],
+      "source_component": null,
+      "source_clip_polygon": null,
+      "source_alpha_bbox_xyxy": [
+        40,
+        129,
+        1519,
+        930
+      ],
+      "source_registration_root_px": [
+        850,
+        855
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "actual_resize_scale_xy": [
+        0.44016227180527384,
+        0.4394506866416979
+      ],
+      "paste_top_left_px": [
+        27,
+        391
+      ],
+      "output_alpha_bbox_xyxy": [
+        27,
+        391,
+        678,
+        743
+      ],
+      "sha256": "e40f878624fa312578b99a6c06c405f6f90385f33047cf6625e31c022c61c7e7",
+      "nonzero_alpha_pixels": 114787,
+      "weapon": {
+        "laser_axe_blade_center_px": [
+          295,
+          710
+        ],
+        "shoulder_px": [
+          396,
+          489
+        ],
+        "laser_axe_cutting_edge_px": []
+      }
+    }
+  ],
+  "collision_note": "Per-frame conservative visible head/torso and leg polygons in hurt_regions.json exclude cannon, axe, their handles, particles, detached armor and transparent leg gaps. Death polygons are supplied for QA only; dead state must not accept damage.",
+  "weapon_note": "Laser axe centers/edge points are native canvas pixels before facing mirror; forward is negative X. Do not include these in boss hurt regions."
+}
