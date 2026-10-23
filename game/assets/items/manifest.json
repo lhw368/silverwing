@@ -1,0 +1,119 @@
+{
+  "format_version": 1,
+  "generator": "Built-in image_gen",
+  "source": "qa/coolant-art-source/consumables-original.png",
+  "packing": "Three icons cropped from the three actual connected alpha components, with 8px source safety padding. Uniformly fit within 112x112 on transparent 128x128 canvases.",
+  "items": {
+    "bomb": {
+      "dimensions": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 9132,
+      "alpha_gt_8_bbox": [
+        16,
+        9,
+        112,
+        119
+      ],
+      "left_right_seam_max_rgba_error": 0,
+      "bytes": 20642,
+      "sha256": "63ec92db082c2827ffbc52180d483c85451d3684c51cc97e003a4e9a8d55cc73",
+      "source_component": {
+        "area": 219087,
+        "bbox": [
+          77,
+          41,
+          622,
+          669
+        ]
+      },
+      "crop_bounds": [
+        69,
+        33,
+        630,
+        677
+      ],
+      "description": "Cyan fragmentation grenade"
+    },
+    "armor": {
+      "dimensions": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 8454,
+      "alpha_gt_8_bbox": [
+        16,
+        9,
+        112,
+        119
+      ],
+      "left_right_seam_max_rgba_error": 0,
+      "bytes": 21526,
+      "sha256": "e0ade0ba82842fdd5b2ed204cc46ce399b16724224db37c29d7880adb783a0a0",
+      "source_component": {
+        "area": 251520,
+        "bbox": [
+          794,
+          46,
+          1344,
+          679
+        ]
+      },
+      "crop_bounds": [
+        786,
+        38,
+        1352,
+        687
+      ],
+      "description": "Teal hexagonal armor module"
+    },
+    "repair": {
+      "dimensions": [
+        128,
+        128
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 9550,
+      "alpha_gt_8_bbox": [
+        9,
+        25,
+        119,
+        102
+      ],
+      "left_right_seam_max_rgba_error": 0,
+      "bytes": 18432,
+      "sha256": "ed2c604112b654cf8295d6d8fbadd05937ee8c445cfb668255e2e4bdab123efd",
+      "source_component": {
+        "area": 247634,
+        "bbox": [
+          1459,
+          142,
+          2138,
+          615
+        ]
+      },
+      "crop_bounds": [
+        1451,
+        134,
+        2146,
+        623
+      ],
+      "description": "White and orange repair cartridge"
+    }
+  }
+}

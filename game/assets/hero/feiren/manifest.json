@@ -1,0 +1,1661 @@
+{
+  "format_version": 2,
+  "character": "Feiren / 绯刃",
+  "generator": "built-in image_gen",
+  "frame_size": [
+    512,
+    512
+  ],
+  "origin": [
+    256,
+    474
+  ],
+  "facing": "right",
+  "standing_visible_height_px": 298,
+  "total_unique_art_frames": 30,
+  "runtime_encoding": "lossless WebP RGBA",
+  "source_scale": 0.594,
+  "godot_centered_sprite_offset": [
+    0,
+    -218
+  ],
+  "world_draw_canvas_px": 264,
+  "runtime_frame_offsets": "All frames [0,0]; registration is baked into transparent padding.",
+  "notes": [
+    "30 distinct new runtime animation cels selected from 31 generated poses. No pose interpolation, part rotation, raster mirroring, or recoloring of Silverwing art.",
+    "Idle/01 is a separately generated registered blink cel. Show it for 0.10-0.12 seconds about every 2.8 seconds; hold idle/00 otherwise.",
+    "All source generations, exact prompts, component extraction and QA remain in qa/feiren-art-source, excluded from Godot import by .gdignore.",
+    "Use root (256,474) for both facings. For manual flips mirror around x=256 rather than the visible bounding-box center.",
+    "A single 0.594 source-to-runtime scale preserves head and armor proportions across poses; crouch and collapse do not get stretched to standing height.",
+    "Run frames 02 and 05 intentionally lift the trailing toe about 9px above the ground plane. No external run offsets are needed.",
+    "Jump/01 is rising, 02 apex, 03 falling; 00 and 04 are takeoff and landing. Physics moves the root.",
+    "Skill uses a short fiery sword dash. Compact flame is confined to the blade; gameplay supplies contact effects.",
+    "Cockpit poses use the same floor-root convention for convenience; place/scale these explicitly inside the cockpit."
+  ],
+  "animations": {
+    "attack1": {
+      "fps": 12,
+      "loop": false,
+      "unique_frames": 2,
+      "frames": [
+        "attack1/00.webp",
+        "attack1/01.webp"
+      ]
+    },
+    "attack2": {
+      "fps": 10,
+      "loop": false,
+      "unique_frames": 1,
+      "frames": [
+        "attack2/00.webp"
+      ]
+    },
+    "attack3": {
+      "fps": 10,
+      "loop": false,
+      "unique_frames": 1,
+      "frames": [
+        "attack3/00.webp"
+      ]
+    },
+    "cockpit": {
+      "fps": 4,
+      "loop": true,
+      "unique_frames": 2,
+      "frames": [
+        "cockpit/00.webp",
+        "cockpit/01.webp"
+      ]
+    },
+    "death": {
+      "fps": 5,
+      "loop": false,
+      "unique_frames": 2,
+      "frames": [
+        "death/00.webp",
+        "death/01.webp"
+      ]
+    },
+    "dodge": {
+      "fps": 12,
+      "loop": false,
+      "unique_frames": 2,
+      "frames": [
+        "dodge/00.webp",
+        "dodge/01.webp"
+      ]
+    },
+    "heavy": {
+      "fps": 8,
+      "loop": false,
+      "unique_frames": 2,
+      "frames": [
+        "heavy/00.webp",
+        "heavy/01.webp"
+      ]
+    },
+    "hurt": {
+      "fps": 10,
+      "loop": false,
+      "unique_frames": 1,
+      "frames": [
+        "hurt/00.webp"
+      ]
+    },
+    "idle": {
+      "fps": 10,
+      "loop": true,
+      "unique_frames": 2,
+      "frames": [
+        "idle/00.webp",
+        "idle/01.webp"
+      ],
+      "frame_durations_seconds": [
+        2.68,
+        0.12
+      ]
+    },
+    "jump": {
+      "fps": 12,
+      "loop": false,
+      "unique_frames": 5,
+      "frames": [
+        "jump/00.webp",
+        "jump/01.webp",
+        "jump/02.webp",
+        "jump/03.webp",
+        "jump/04.webp"
+      ]
+    },
+    "rescue": {
+      "fps": 3,
+      "loop": true,
+      "unique_frames": 1,
+      "frames": [
+        "rescue/00.webp"
+      ]
+    },
+    "run": {
+      "fps": 10,
+      "loop": true,
+      "unique_frames": 6,
+      "frames": [
+        "run/00.webp",
+        "run/01.webp",
+        "run/02.webp",
+        "run/03.webp",
+        "run/04.webp",
+        "run/05.webp"
+      ]
+    },
+    "skill": {
+      "fps": 12,
+      "loop": false,
+      "unique_frames": 3,
+      "frames": [
+        "skill/00.webp",
+        "skill/01.webp",
+        "skill/02.webp"
+      ]
+    }
+  },
+  "extraction": {
+    "attack1": [
+      {
+        "file": "attack1/00.webp",
+        "pose": "waist-level windup",
+        "source": "combat-a-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 99057,
+        "source_bbox": [
+          969,
+          32,
+          1519,
+          507
+        ],
+        "source_core_bbox": [
+          974,
+          36,
+          1516,
+          504
+        ],
+        "source_anchor": [
+          1324,
+          504
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          45,
+          194
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          47,
+          195,
+          371,
+          475
+        ],
+        "bottom_relative_to_floor_px": 1,
+        "bytes": 77862,
+        "sha256": "c1f62efdeeaeff75b1a93e8d1171e8bd011eb4edeed9b357574fffa4a42bfa2e",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "attack1/01.webp",
+        "pose": "horizontal contact lunge",
+        "source": "combat-a-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 90124,
+        "source_bbox": [
+          19,
+          547,
+          669,
+          984
+        ],
+        "source_core_bbox": [
+          23,
+          551,
+          664,
+          980
+        ],
+        "source_anchor": [
+          250,
+          981
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          119,
+          216
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          121,
+          218,
+          503,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 71738,
+        "sha256": "c401b077905a93237b0d9bb34e435797416a2d5f69a74ef6ab91cfcd17b65940",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "attack2": [
+      {
+        "file": "attack2/00.webp",
+        "pose": "rising diagonal contact",
+        "source": "combat-a-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 87663,
+        "source_bbox": [
+          575,
+          486,
+          1123,
+          996
+        ],
+        "source_core_bbox": [
+          579,
+          491,
+          1117,
+          993
+        ],
+        "source_anchor": [
+          790,
+          994
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          128,
+          172
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          130,
+          174,
+          452,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 73152,
+        "sha256": "bde2fde4afe02bd502d5811be1ed3e4450e7213fdd8d2497ffd6fb9282de0228",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "attack3": [
+      {
+        "file": "attack3/00.webp",
+        "pose": "low finishing contact",
+        "source": "combat-a-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 78081,
+        "source_bbox": [
+          1041,
+          575,
+          1529,
+          990
+        ],
+        "source_core_bbox": [
+          1045,
+          580,
+          1524,
+          984
+        ],
+        "source_anchor": [
+          1290,
+          983
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          108,
+          232
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          110,
+          234,
+          396,
+          477
+        ],
+        "bottom_relative_to_floor_px": 3,
+        "bytes": 63872,
+        "sha256": "2844af7503fff337eefbe090c24cabd118477ab0c87cc0707b836365480fb76f",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "cockpit": [
+      {
+        "file": "cockpit/00.webp",
+        "pose": "seated pilot neutral controls",
+        "source": "skill-e-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 86547,
+        "source_bbox": [
+          619,
+          513,
+          1003,
+          976
+        ],
+        "source_core_bbox": [
+          622,
+          517,
+          999,
+          973
+        ],
+        "source_anchor": [
+          780,
+          974
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          160,
+          200
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          161,
+          202,
+          386,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 64640,
+        "sha256": "1f35551bbb026a5b6a3058330f6f107b90984c5e3d99aea5653c8030fe5c9886",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "cockpit/01.webp",
+        "pose": "seated pilot steering controls",
+        "source": "skill-e-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 96813,
+        "source_bbox": [
+          1095,
+          516,
+          1506,
+          981
+        ],
+        "source_core_bbox": [
+          1098,
+          520,
+          1503,
+          978
+        ],
+        "source_anchor": [
+          1290,
+          978
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          140,
+          200
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          141,
+          201,
+          383,
+          475
+        ],
+        "bottom_relative_to_floor_px": 1,
+        "bytes": 72048,
+        "sha256": "86cf3b5748b0f3e2f597a08f154122ce84eab1af750d575f54c2317bd851472e",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "death": [
+      {
+        "file": "death/00.webp",
+        "pose": "kneeling collapse",
+        "source": "combat-d-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 72755,
+        "source_bbox": [
+          1127,
+          637,
+          1512,
+          966
+        ],
+        "source_core_bbox": [
+          1130,
+          641,
+          1509,
+          963
+        ],
+        "source_anchor": [
+          1320,
+          964
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          141,
+          280
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          142,
+          282,
+          369,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 53130,
+        "sha256": "cddb72f4b9805f04b5fce1ca5ba58a5899d070c5ceaf98351e88412108747398",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "death/01.webp",
+        "pose": "side-lying final collapse",
+        "source": "skill-e-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 67218,
+        "source_bbox": [
+          12,
+          688,
+          593,
+          904
+        ],
+        "source_core_bbox": [
+          16,
+          691,
+          590,
+          900
+        ],
+        "source_anchor": [
+          300,
+          901
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          85,
+          347
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          87,
+          348,
+          429,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 50420,
+        "sha256": "4d794ca716d7019fdb458b00db3b0debeaa9f926fdd3bec1ba8941459289ca8e",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "dodge": [
+      {
+        "file": "dodge/00.webp",
+        "pose": "evasion coil",
+        "source": "combat-d-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 72755,
+        "source_bbox": [
+          1163,
+          157,
+          1471,
+          536
+        ],
+        "source_core_bbox": [
+          1167,
+          160,
+          1468,
+          532
+        ],
+        "source_anchor": [
+          1318,
+          533
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          164,
+          251
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          166,
+          252,
+          346,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 55680,
+        "sha256": "a819aa3c1704d025b6c0f04868c1de8d8e769d0062cb046ee0675633d8917523",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "dodge/01.webp",
+        "pose": "low evasive slide",
+        "source": "combat-d-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 77284,
+        "source_bbox": [
+          32,
+          640,
+          601,
+          962
+        ],
+        "source_core_bbox": [
+          34,
+          643,
+          598,
+          959
+        ],
+        "source_anchor": [
+          281,
+          960
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          108,
+          284
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          109,
+          285,
+          445,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 58914,
+        "sha256": "4970ad9b537950928e4a95adcf4ab210562577505579dd6e905bd493f829d572",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "heavy": [
+      {
+        "file": "heavy/00.webp",
+        "pose": "overhead two-hand windup",
+        "source": "combat-d-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 87734,
+        "source_bbox": [
+          61,
+          14,
+          508,
+          538
+        ],
+        "source_core_bbox": [
+          64,
+          16,
+          504,
+          535
+        ],
+        "source_anchor": [
+          300,
+          535
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          114,
+          165
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          115,
+          166,
+          378,
+          475
+        ],
+        "bottom_relative_to_floor_px": 1,
+        "bytes": 69062,
+        "sha256": "72b5d408ade5462fedb730ba519d2f71cf2522be19c8b3a7c170a90343df11d5",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "heavy/01.webp",
+        "pose": "downward two-hand contact",
+        "source": "combat-d-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 83831,
+        "source_bbox": [
+          559,
+          95,
+          1094,
+          544
+        ],
+        "source_core_bbox": [
+          563,
+          98,
+          1090,
+          541
+        ],
+        "source_anchor": [
+          810,
+          538
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          107,
+          211
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          108,
+          212,
+          423,
+          477
+        ],
+        "bottom_relative_to_floor_px": 3,
+        "bytes": 66344,
+        "sha256": "be2494d8c4271dbb1c6cee3954d24b23e94653c6ce07709bf9a4ee955cf2e0e0",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "hurt": [
+      {
+        "file": "hurt/00.webp",
+        "pose": "backward hit recoil",
+        "source": "combat-d-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 86701,
+        "source_bbox": [
+          593,
+          528,
+          1057,
+          976
+        ],
+        "source_core_bbox": [
+          597,
+          531,
+          1053,
+          973
+        ],
+        "source_anchor": [
+          807,
+          973
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          129,
+          210
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          131,
+          211,
+          403,
+          475
+        ],
+        "bottom_relative_to_floor_px": 1,
+        "bytes": 66516,
+        "sha256": "4d99ba56ed3c6dd16267e8ba1a3e898686d640981385fff6adcdf0d2d86e01a2",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "idle": [
+      {
+        "file": "idle/00.webp",
+        "pose": "alert sword-low stance",
+        "source": "combat-a-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 99811,
+        "source_bbox": [
+          9,
+          6,
+          489,
+          513
+        ],
+        "source_core_bbox": [
+          14,
+          10,
+          485,
+          510
+        ],
+        "source_anchor": [
+          302,
+          511
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          82,
+          174
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          84,
+          175,
+          365,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 80366,
+        "sha256": "6d0e42f9f1d1be6375147de19b3185dbb922f5889c0639926a87b43ed2d097ee",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "idle/01.webp",
+        "pose": "registered blink / soft breath",
+        "source": "idle-blink-original.png",
+        "source_resolution": [
+          1254,
+          1254
+        ],
+        "source_component_pixels": 218942,
+        "source_bbox": [
+          201,
+          422,
+          904,
+          1165
+        ],
+        "source_core_bbox": [
+          205,
+          426,
+          900,
+          1162
+        ],
+        "source_anchor": [
+          627,
+          1163.37890625
+        ],
+        "scale": 0.4082934609250399,
+        "output_paste": [
+          0,
+          -1
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          83,
+          172,
+          368,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 75734,
+        "sha256": "d9e4e66a307e631b99b1a3c80876bb5ce04b828c6a05fe3323f359bef3e39924",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "jump": [
+      {
+        "file": "jump/00.webp",
+        "pose": "takeoff compression",
+        "source": "jump-c-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 75867,
+        "source_bbox": [
+          69,
+          128,
+          445,
+          488
+        ],
+        "source_core_bbox": [
+          72,
+          131,
+          441,
+          484
+        ],
+        "source_anchor": [
+          280,
+          485
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          131,
+          262
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          132,
+          263,
+          352,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 57328,
+        "sha256": "4e5a4fa80a0ebf05330ac73967aa2d28a6fa6cac99dae9eb85c5efbd5378bb5b",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "jump/01.webp",
+        "pose": "rising extension",
+        "source": "jump-c-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 86003,
+        "source_bbox": [
+          583,
+          7,
+          997,
+          528
+        ],
+        "source_core_bbox": [
+          586,
+          11,
+          994,
+          525
+        ],
+        "source_anchor": [
+          790,
+          526
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          133,
+          166
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          134,
+          168,
+          378,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 66240,
+        "sha256": "247d03b5bf258d7af72b97a16c4e704181efbd99089dab2c44be10e4e9890660",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "jump/02.webp",
+        "pose": "apex tuck",
+        "source": "jump-c-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 80723,
+        "source_bbox": [
+          1059,
+          44,
+          1445,
+          463
+        ],
+        "source_core_bbox": [
+          1063,
+          47,
+          1442,
+          459
+        ],
+        "source_anchor": [
+          1265,
+          460
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          134,
+          227
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          136,
+          228,
+          362,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 61846,
+        "sha256": "d152c2228aebacdc2f3e7c4a8049389bc30ab404065221ad4ff8c09f5d6f7305",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "jump/03.webp",
+        "pose": "falling extension",
+        "source": "jump-c-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 83948,
+        "source_bbox": [
+          64,
+          501,
+          419,
+          984
+        ],
+        "source_core_bbox": [
+          67,
+          504,
+          416,
+          980
+        ],
+        "source_anchor": [
+          265,
+          981
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          137,
+          189
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          138,
+          190,
+          347,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 65076,
+        "sha256": "0c1c0985e385de24a2374f8ec637a00acb3c6099c5cec996bd68a1271f5e59e5",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "jump/04.webp",
+        "pose": "landing compression",
+        "source": "jump-c-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 84617,
+        "source_bbox": [
+          560,
+          635,
+          979,
+          993
+        ],
+        "source_core_bbox": [
+          562,
+          638,
+          976,
+          990
+        ],
+        "source_anchor": [
+          799,
+          991
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          114,
+          263
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          115,
+          264,
+          362,
+          475
+        ],
+        "bottom_relative_to_floor_px": 1,
+        "bytes": 63938,
+        "sha256": "d793b631dde30e16c342803571abbf4d9e5fd94bc9aa6f2f6a318a08d904fee8",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "rescue": [
+      {
+        "file": "rescue/00.webp",
+        "pose": "freed friendly wave",
+        "source": "jump-c-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 79995,
+        "source_bbox": [
+          1125,
+          502,
+          1426,
+          1006
+        ],
+        "source_core_bbox": [
+          1128,
+          505,
+          1424,
+          1002
+        ],
+        "source_anchor": [
+          1285,
+          1003
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          161,
+          176
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          162,
+          177,
+          339,
+          473
+        ],
+        "bottom_relative_to_floor_px": -1,
+        "bytes": 63378,
+        "sha256": "563641702c479d5257a74d3c2e8e916c89dc73cc3837d0c0ef6e9567f6a54acc",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "run": [
+      {
+        "file": "run/00.webp",
+        "pose": "right-leading contact",
+        "source": "run-b-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 98469,
+        "source_bbox": [
+          44,
+          14,
+          485,
+          506
+        ],
+        "source_core_bbox": [
+          47,
+          17,
+          481,
+          502
+        ],
+        "source_anchor": [
+          300,
+          503
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          104,
+          184
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          105,
+          185,
+          364,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 75024,
+        "sha256": "1922a89206ba209b89c2fdd2785bd3d647ce1da656a8329a0216d7ee9875abc2",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "run/01.webp",
+        "pose": "right support / left passing",
+        "source": "run-b-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 85710,
+        "source_bbox": [
+          664,
+          16,
+          964,
+          508
+        ],
+        "source_core_bbox": [
+          668,
+          18,
+          960,
+          504
+        ],
+        "source_anchor": [
+          798,
+          505
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          176,
+          184
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          178,
+          185,
+          352,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 65462,
+        "sha256": "b2d4ae9e3861811e3dc687bb84244f6e37551003ac59d96d5bbb8628eaff723d",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "run/02.webp",
+        "pose": "right push-off / left knee high",
+        "source": "run-b-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 92202,
+        "source_bbox": [
+          1089,
+          12,
+          1489,
+          507
+        ],
+        "source_core_bbox": [
+          1093,
+          15,
+          1485,
+          503
+        ],
+        "source_anchor": [
+          1310,
+          519
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          125,
+          173
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          127,
+          174,
+          361,
+          465
+        ],
+        "bottom_relative_to_floor_px": -9,
+        "bytes": 71012,
+        "sha256": "3dce6023034f954203da4cf36d3f0cae11f6e0ae08c30b8036db89d2a245b106",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "run/03.webp",
+        "pose": "left-leading contact",
+        "source": "run-b-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 95948,
+        "source_bbox": [
+          64,
+          532,
+          543,
+          1005
+        ],
+        "source_core_bbox": [
+          67,
+          535,
+          540,
+          1001
+        ],
+        "source_anchor": [
+          320,
+          1002
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          104,
+          195
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          105,
+          196,
+          388,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 73176,
+        "sha256": "a578d0cfbece2a33851ce355fa55ee9bab4c815cf69561a533b39ecfbb11c342",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "run/04.webp",
+        "pose": "left support / right passing",
+        "source": "run-b-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 75334,
+        "source_bbox": [
+          662,
+          531,
+          959,
+          1006
+        ],
+        "source_core_bbox": [
+          666,
+          534,
+          955,
+          1002
+        ],
+        "source_anchor": [
+          800,
+          1003
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          174,
+          194
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          176,
+          195,
+          349,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 56826,
+        "sha256": "4da51ad9c363586bf08651571e25d428d0945b1810a69d345c777a0030314124",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "run/05.webp",
+        "pose": "left push-off / right knee high",
+        "source": "run-b-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 91675,
+        "source_bbox": [
+          1107,
+          521,
+          1497,
+          1008
+        ],
+        "source_core_bbox": [
+          1111,
+          525,
+          1493,
+          1004
+        ],
+        "source_anchor": [
+          1323,
+          1020
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          128,
+          178
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          130,
+          180,
+          359,
+          465
+        ],
+        "bottom_relative_to_floor_px": -9,
+        "bytes": 69572,
+        "sha256": "68091f82c3cb36992315e45345f916561b19d463bebea94e09d0bf4b202fd7ba",
+        "edge_alpha_pixels": 0
+      }
+    ],
+    "skill": [
+      {
+        "file": "skill/00.webp",
+        "pose": "fiery saber dash startup",
+        "source": "skill-e-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 82364,
+        "source_bbox": [
+          4,
+          84,
+          502,
+          474
+        ],
+        "source_core_bbox": [
+          9,
+          88,
+          499,
+          471
+        ],
+        "source_anchor": [
+          250,
+          471
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          110,
+          244
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          112,
+          245,
+          405,
+          475
+        ],
+        "bottom_relative_to_floor_px": 1,
+        "bytes": 66950,
+        "sha256": "ccf3f9863b8f90f7f1a6b8e00a072ff676173d50fce9537963330b3abe527565",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "skill/01.webp",
+        "pose": "fiery saber dash travel",
+        "source": "skill-e-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 84243,
+        "source_bbox": [
+          505,
+          88,
+          1183,
+          473
+        ],
+        "source_core_bbox": [
+          508,
+          92,
+          1177,
+          470
+        ],
+        "source_anchor": [
+          765,
+          470
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          102,
+          247
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          103,
+          249,
+          503,
+          475
+        ],
+        "bottom_relative_to_floor_px": 1,
+        "bytes": 68472,
+        "sha256": "0da7cedc6776285673bf8702cb4a263af64612606c945b36158e935063376f11",
+        "edge_alpha_pixels": 0
+      },
+      {
+        "file": "skill/02.webp",
+        "pose": "fiery saber dash contact",
+        "source": "skill-e-original.png",
+        "source_resolution": [
+          1536,
+          1024
+        ],
+        "source_component_pixels": 81241,
+        "source_bbox": [
+          1073,
+          28,
+          1531,
+          481
+        ],
+        "source_core_bbox": [
+          1077,
+          32,
+          1526,
+          478
+        ],
+        "source_anchor": [
+          1314,
+          479
+        ],
+        "scale": 0.594,
+        "output_paste": [
+          113,
+          206
+        ],
+        "root": [
+          256,
+          474
+        ],
+        "runtime_offset": [
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt16": [
+          115,
+          207,
+          383,
+          474
+        ],
+        "bottom_relative_to_floor_px": 0,
+        "bytes": 67258,
+        "sha256": "57d090c03f0073b42882889525f904fe0994071228522cd96b354405fe280290",
+        "edge_alpha_pixels": 0
+      }
+    ]
+  },
+  "runtime_total_bytes": 1991036
+}

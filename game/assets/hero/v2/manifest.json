@@ -1,0 +1,632 @@
+{
+  "format_version": 1,
+  "character": "Silverwing / 银翼",
+  "frame_size": [
+    512,
+    512
+  ],
+  "origin": [
+    256,
+    474
+  ],
+  "facing": "right",
+  "standing_visible_height_px": 298,
+  "total_unique_art_frames": 24,
+  "notes": [
+    "All frames are actual distinct artwork; the engine may reuse, hold, offset or rotate key poses for timing.",
+    "11 combat key poses retained at near-native detail, 1 newly drawn standalone idle, 6 new high-native-detail run poses, and 6 jump key poses generated with the built-in image generation tool.",
+    "Six new high-native-detail run keyframes were generated at 462-484px native character height; they are not interpolated pet frames.",
+    "The original idle and jump face the viewer and were therefore not reused.",
+    "Run and jump use a stowed energy blade; combat poses show the blade.",
+    "Sprite origin is ground point at (256,474). Godot Sprite2D offset with centered=true: (0,-218). Preserve original 264px world draw canvas size when comparing v1 and v2.",
+    "For physically driven jump, hold jump/02.png while rising, jump/03.png at apex, jump/04.png falling; use 00/01 for takeoff and 05 for landing.",
+    "Sprites are normalized key art, not 60 hand-drawn frames per second."
+  ],
+  "animations": {
+    "idle": {
+      "fps": 4,
+      "loop": true,
+      "unique_frames": 1,
+      "frames": [
+        "idle/00.png"
+      ]
+    },
+    "attack1": {
+      "fps": 12,
+      "loop": false,
+      "unique_frames": 2,
+      "frames": [
+        "attack1/00.png",
+        "attack1/01.png"
+      ]
+    },
+    "attack2": {
+      "fps": 10,
+      "loop": false,
+      "unique_frames": 1,
+      "frames": [
+        "attack2/00.png"
+      ]
+    },
+    "attack3": {
+      "fps": 10,
+      "loop": false,
+      "unique_frames": 1,
+      "frames": [
+        "attack3/00.png"
+      ]
+    },
+    "heavy": {
+      "fps": 7,
+      "loop": false,
+      "unique_frames": 2,
+      "frames": [
+        "heavy/00.png",
+        "heavy/01.png"
+      ]
+    },
+    "dodge": {
+      "fps": 12,
+      "loop": false,
+      "unique_frames": 2,
+      "frames": [
+        "dodge/00.png",
+        "dodge/01.png"
+      ]
+    },
+    "skill": {
+      "fps": 8,
+      "loop": false,
+      "unique_frames": 1,
+      "frames": [
+        "skill/00.png"
+      ]
+    },
+    "hurt": {
+      "fps": 10,
+      "loop": false,
+      "unique_frames": 1,
+      "frames": [
+        "hurt/00.png"
+      ]
+    },
+    "death": {
+      "fps": 6,
+      "loop": false,
+      "unique_frames": 1,
+      "frames": [
+        "death/00.png"
+      ]
+    },
+    "run": {
+      "fps": 9,
+      "loop": true,
+      "unique_frames": 6,
+      "frames": [
+        "run/00.png",
+        "run/01.png",
+        "run/02.png",
+        "run/03.png",
+        "run/04.png",
+        "run/05.png"
+      ]
+    },
+    "jump": {
+      "fps": 12,
+      "loop": false,
+      "unique_frames": 6,
+      "frames": [
+        "jump/00.png",
+        "jump/01.png",
+        "jump/02.png",
+        "jump/03.png",
+        "jump/04.png",
+        "jump/05.png"
+      ]
+    }
+  },
+  "extraction": {
+    "idle": [
+      {
+        "file": "idle/00.png",
+        "source_bbox": [
+          68,
+          8,
+          1186,
+          1164
+        ],
+        "source_anchor": [
+          790,
+          1158
+        ],
+        "scale": 0.26,
+        "visible_bbox": [
+          68,
+          175,
+          359,
+          476
+        ]
+      }
+    ],
+    "attack1": [
+      {
+        "file": "attack1/00.png",
+        "source_bbox": [
+          371,
+          80,
+          662,
+          375
+        ],
+        "source_anchor": [
+          550,
+          372
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          73,
+          175,
+          371,
+          477
+        ]
+      },
+      {
+        "file": "attack1/01.png",
+        "source_bbox": [
+          733,
+          96,
+          1169,
+          375
+        ],
+        "source_anchor": [
+          932,
+          368
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          52,
+          195,
+          498,
+          481
+        ]
+      }
+    ],
+    "attack2": [
+      {
+        "file": "attack2/00.png",
+        "source_bbox": [
+          1153,
+          21,
+          1436,
+          391
+        ],
+        "source_anchor": [
+          1284,
+          382
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          122,
+          104,
+          412,
+          483
+        ]
+      }
+    ],
+    "attack3": [
+      {
+        "file": "attack3/00.png",
+        "source_bbox": [
+          28,
+          469,
+          468,
+          713
+        ],
+        "source_anchor": [
+          250,
+          705
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          29,
+          232,
+          480,
+          482
+        ]
+      }
+    ],
+    "heavy": [
+      {
+        "file": "heavy/00.png",
+        "source_bbox": [
+          381,
+          388,
+          693,
+          722
+        ],
+        "source_anchor": [
+          565,
+          710
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          68,
+          144,
+          387,
+          486
+        ]
+      },
+      {
+        "file": "heavy/01.png",
+        "source_bbox": [
+          735,
+          447,
+          1098,
+          732
+        ],
+        "source_anchor": [
+          915,
+          711
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          72,
+          204,
+          444,
+          496
+        ]
+      }
+    ],
+    "dodge": [
+      {
+        "file": "dodge/00.png",
+        "source_bbox": [
+          1063,
+          495,
+          1432,
+          713
+        ],
+        "source_anchor": [
+          1294,
+          703
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          19,
+          261,
+          397,
+          484
+        ]
+      },
+      {
+        "file": "dodge/01.png",
+        "source_bbox": [
+          10,
+          824,
+          355,
+          1060
+        ],
+        "source_anchor": [
+          225,
+          1053
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          36,
+          240,
+          389,
+          482
+        ]
+      }
+    ],
+    "skill": [
+      {
+        "file": "skill/00.png",
+        "source_bbox": [
+          419,
+          720,
+          740,
+          1066
+        ],
+        "source_anchor": [
+          565,
+          1055
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          106,
+          131,
+          435,
+          485
+        ]
+      }
+    ],
+    "hurt": [
+      {
+        "file": "hurt/00.png",
+        "source_bbox": [
+          771,
+          771,
+          1082,
+          1058
+        ],
+        "source_anchor": [
+          920,
+          1053
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          103,
+          185,
+          421,
+          479
+        ]
+      }
+    ],
+    "death": [
+      {
+        "file": "death/00.png",
+        "source_bbox": [
+          1137,
+          848,
+          1447,
+          1059
+        ],
+        "source_anchor": [
+          1275,
+          1051
+        ],
+        "scale": 1.024,
+        "visible_bbox": [
+          115,
+          266,
+          432,
+          482
+        ]
+      }
+    ],
+    "run": [
+      {
+        "file": "run/00.png",
+        "source_bbox": [
+          35,
+          14,
+          465,
+          512
+        ],
+        "source_anchor": [
+          300,
+          512
+        ],
+        "scale": 0.62,
+        "visible_bbox": [
+          92,
+          165,
+          359,
+          474
+        ]
+      },
+      {
+        "file": "run/01.png",
+        "source_bbox": [
+          557,
+          35,
+          966,
+          518
+        ],
+        "source_anchor": [
+          815,
+          512
+        ],
+        "scale": 0.62,
+        "visible_bbox": [
+          96,
+          178,
+          350,
+          477
+        ]
+      },
+      {
+        "file": "run/02.png",
+        "source_bbox": [
+          1038,
+          33,
+          1535,
+          516
+        ],
+        "source_anchor": [
+          1300,
+          512
+        ],
+        "scale": 0.62,
+        "visible_bbox": [
+          94,
+          177,
+          402,
+          476
+        ]
+      },
+      {
+        "file": "run/03.png",
+        "source_bbox": [
+          45,
+          527,
+          452,
+          1009
+        ],
+        "source_anchor": [
+          300,
+          1014
+        ],
+        "scale": 0.62,
+        "visible_bbox": [
+          98,
+          172,
+          350,
+          471
+        ]
+      },
+      {
+        "file": "run/04.png",
+        "source_bbox": [
+          557,
+          528,
+          992,
+          1004
+        ],
+        "source_anchor": [
+          815,
+          1014
+        ],
+        "scale": 0.62,
+        "visible_bbox": [
+          96,
+          173,
+          366,
+          468
+        ]
+      },
+      {
+        "file": "run/05.png",
+        "source_bbox": [
+          1055,
+          527,
+          1518,
+          1024
+        ],
+        "source_anchor": [
+          1300,
+          1014
+        ],
+        "scale": 0.62,
+        "visible_bbox": [
+          104,
+          172,
+          391,
+          480
+        ]
+      }
+    ],
+    "jump": [
+      {
+        "file": "jump/00.png",
+        "source_bbox": [
+          108,
+          124,
+          480,
+          513
+        ],
+        "source_anchor": [
+          290,
+          504
+        ],
+        "scale": 0.672,
+        "visible_bbox": [
+          134,
+          219,
+          384,
+          479
+        ]
+      },
+      {
+        "file": "jump/01.png",
+        "source_bbox": [
+          624,
+          46,
+          947,
+          512
+        ],
+        "source_anchor": [
+          790,
+          510
+        ],
+        "scale": 0.672,
+        "visible_bbox": [
+          144,
+          162,
+          361,
+          475
+        ]
+      },
+      {
+        "file": "jump/02.png",
+        "source_bbox": [
+          1150,
+          28,
+          1458,
+          465
+        ],
+        "source_anchor": [
+          1310,
+          462
+        ],
+        "scale": 0.672,
+        "visible_bbox": [
+          148,
+          182,
+          355,
+          476
+        ]
+      },
+      {
+        "file": "jump/03.png",
+        "source_bbox": [
+          59,
+          543,
+          451,
+          945
+        ],
+        "source_anchor": [
+          270,
+          943
+        ],
+        "scale": 0.672,
+        "visible_bbox": [
+          114,
+          205,
+          377,
+          475
+        ]
+      },
+      {
+        "file": "jump/04.png",
+        "source_bbox": [
+          575,
+          541,
+          983,
+          992
+        ],
+        "source_anchor": [
+          785,
+          986
+        ],
+        "scale": 0.672,
+        "visible_bbox": [
+          115,
+          175,
+          389,
+          478
+        ]
+      },
+      {
+        "file": "jump/05.png",
+        "source_bbox": [
+          1099,
+          643,
+          1484,
+          992
+        ],
+        "source_anchor": [
+          1280,
+          986
+        ],
+        "scale": 0.672,
+        "visible_bbox": [
+          134,
+          244,
+          393,
+          479
+        ]
+      }
+    ]
+  }
+}
