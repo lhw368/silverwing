@@ -1,0 +1,164 @@
+{
+  "format_version": 1,
+  "asset_set": "Silverwing Starport original three-depth parallax",
+  "generator": "Built-in image_gen; three independent generations using approved concept as style reference",
+  "base_viewport": [
+    1280,
+    720
+  ],
+  "game_floor_y": 574,
+  "max_camera_x": 14000,
+  "composition_order": [
+    "far",
+    "mid",
+    "world_and_actors",
+    "foreground",
+    "HUD"
+  ],
+  "layers": [
+    {
+      "id": "far",
+      "path": "game-ready/far-sky-starport.webp",
+      "source": "originals/far-starport-original.png",
+      "size": [
+        1920,
+        720
+      ],
+      "draw_origin": [
+        0,
+        0
+      ],
+      "camera_scroll_scale": 0.04,
+      "draw_tint": [
+        0.78,
+        0.84,
+        0.93,
+        1
+      ],
+      "repeat": false,
+      "strategy": "Overscan plate. x=-camera_x*0.04. At max camera=14000, right extent=1360, leaving 80px beyond 1280 viewport. Do not modulo or stretch to viewport. No far-layer seam enters the level.",
+      "packing": "Uniform resize to 1920x1080; crop y=250..970 to 1920x720, preserving aspect ratio."
+    },
+    {
+      "id": "mid",
+      "path": "game-ready/mid-gantries-repeat.webp",
+      "source": "originals/mid-architecture-original.png",
+      "size": [
+        2560,
+        720
+      ],
+      "draw_origin": [
+        0,
+        -40
+      ],
+      "camera_scroll_scale": 0.34,
+      "draw_tint": [
+        0.76,
+        0.85,
+        0.95,
+        1
+      ],
+      "repeat": true,
+      "repeat_period_px": 2560,
+      "strategy": "Generated cutout resized to 1280x720, followed by its horizontal mirror. At x=1280 and x=0/2560 joins, every RGBA edge pixel matches. Draw whole repeat texture every 2560px. Do not crop/reset every 1280px. Mirrored motif is intentional, not hand-painted seamless topology.",
+      "packing": "Uniform 16:9 resize; horizontal mirror pair; true transparency and structural holes retained."
+    },
+    {
+      "id": "foreground",
+      "path": "game-ready/foreground-pipes-repeat.webp",
+      "source": "originals/foreground-pipes-original.png",
+      "size": [
+        2560,
+        118
+      ],
+      "draw_origin": [
+        0,
+        622
+      ],
+      "camera_scroll_scale": 1.15,
+      "draw_tint": [
+        0.9,
+        0.96,
+        1,
+        1
+      ],
+      "repeat": true,
+      "repeat_period_px": 2560,
+      "strategy": "Generated low pipe strip cropped to y=496..696, resized to 1280x118 and followed by mirror. Identical-edge joins. Draw AFTER actors but BEFORE HUD. Top is >=622: safely 48px below feet at y574, including faint alpha. Never move upward to fill scene.",
+      "packing": "Only transparent source padding discarded; uniform scale within <0.2% rounding; alpha preserved."
+    }
+  ],
+  "import_recommendation": {
+    "filter": "linear",
+    "mipmaps": true,
+    "compression": "lossless PNG; no color-key",
+    "repeat": "disable texture_repeat when manually drawing repeat copies; alternatively enable repeat and use full repeat dimensions"
+  },
+  "limitations": [
+    "Middle and foreground periodicity is made seam-exact using reflection. Reflection is visible if scrutinized; no random unique architecture is claimed.",
+    "Far plate coverage is valid for 1280px viewport and max camera=14000 at 0.04 scroll. If level/camera bounds increase, retain overscan or regenerate wider far art.",
+    "Generated cutout interiors are mostly alpha 251-253, intentionally preserved. Do not flatten on black."
+  ],
+  "qa": {
+    "far-sky-starport.png": {
+      "dimensions": [
+        1920,
+        720
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        255,
+        255
+      ],
+      "transparent_pixels": 0,
+      "alpha_gt_8_bbox": [
+        0,
+        0,
+        1920,
+        720
+      ],
+      "left_right_seam_max_rgba_error": 119,
+      "sha256": "58a7b51769ecaac76ec52b61997020b2ac0fe9d7dcb71ccca9aec2875af85577"
+    },
+    "mid-gantries-repeat.png": {
+      "dimensions": [
+        2560,
+        720
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 1055132,
+      "alpha_gt_8_bbox": [
+        0,
+        60,
+        2560,
+        720
+      ],
+      "left_right_seam_max_rgba_error": 0,
+      "sha256": "fe324619a6e19e429028a43558fe3e379572c2395251846549501c1de15c7af3"
+    },
+    "foreground-pipes-repeat.png": {
+      "dimensions": [
+        2560,
+        118
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "transparent_pixels": 98864,
+      "alpha_gt_8_bbox": [
+        0,
+        3,
+        2560,
+        115
+      ],
+      "left_right_seam_max_rgba_error": 0,
+      "sha256": "64da32d477881acce0a9aa52199de41fb4d1a409c2bbe9553307a97ba784f933"
+    }
+  }
+}
