@@ -1,0 +1,203 @@
+{
+  "format_version": 1,
+  "source": "Built-in image_gen; original generated art; no franchise assets",
+  "preparation": "Generated-pixel crop, opacity normalization, Lanczos registration, lossless WebP. No manually painted terrain.",
+  "coordinate_system": "Sprite pixels are top-left based. Terrain gameplay root is center at feet; deck root is top-left walkable edge.",
+  "assets": {
+    "cargo-container": {
+      "path": "assets/environment/furnace-terrain/cargo-container.webp",
+      "native_size": [
+        640,
+        496
+      ],
+      "game_visual_size": [
+        240,
+        186
+      ],
+      "native_root": [
+        320,
+        496
+      ],
+      "bytes": 443716,
+      "alpha_bbox": [
+        0,
+        0,
+        640,
+        496
+      ],
+      "flat_top_native_row": 0,
+      "source": "qa/v08-terrain-art/sources/cargo-container.png",
+      "source_crop": [
+        38,
+        140,
+        1386,
+        972
+      ],
+      "game_root": [
+        120,
+        186
+      ],
+      "game_draw_rect_from_root": [
+        -120,
+        -186,
+        240,
+        186
+      ],
+      "game_collision_rect_from_root": [
+        -120,
+        -186,
+        240,
+        186
+      ],
+      "registration": "Closed rectangular front crop. Top y=0; feet y=496. No interior alpha holes."
+    },
+    "low-barricade": {
+      "path": "assets/environment/furnace-terrain/low-barricade.webp",
+      "native_size": [
+        512,
+        352
+      ],
+      "game_visual_size": [
+        140,
+        96
+      ],
+      "native_root": [
+        256,
+        352
+      ],
+      "bytes": 273998,
+      "alpha_bbox": [
+        0,
+        0,
+        512,
+        352
+      ],
+      "flat_top_native_row": 0,
+      "source": "qa/v08-terrain-art/sources/low-barricade.png",
+      "source_crop": [
+        49,
+        242,
+        1465,
+        849
+      ],
+      "game_root": [
+        70,
+        96
+      ],
+      "game_draw_rect_from_root": [
+        -70,
+        -96,
+        140,
+        96
+      ],
+      "game_collision_rect_from_root": [
+        -70,
+        -96,
+        140,
+        96
+      ],
+      "alternate_game_visual_size": [
+        120,
+        90
+      ],
+      "registration": "Solid closed front; full-width flat top and bottom. Also supports 120x90 low-cover draw size."
+    },
+    "freight-deck": {
+      "path": "assets/environment/furnace-terrain/freight-deck.webp",
+      "native_size": [
+        960,
+        192
+      ],
+      "game_visual_size": [
+        320,
+        64
+      ],
+      "native_root": [
+        0,
+        0
+      ],
+      "bytes": 233404,
+      "alpha_bbox": [
+        0,
+        0,
+        960,
+        192
+      ],
+      "flat_top_native_row": 0,
+      "source": "qa/v08-terrain-art/sources/freight-deck.png",
+      "source_crop_top": [
+        12,
+        260,
+        1972,
+        393
+      ],
+      "source_crop_truss": [
+        12,
+        393,
+        1972,
+        540
+      ],
+      "game_root": [
+        0,
+        0
+      ],
+      "game_draw_rect_from_root": [
+        0,
+        0,
+        320,
+        64
+      ],
+      "game_collision_rect_from_root": [
+        0,
+        0,
+        320,
+        24
+      ],
+      "opaque_deck_native_rows": [
+        0,
+        72
+      ],
+      "decorative_truss_native_rows": [
+        72,
+        192
+      ],
+      "registration": "Repeat or stretch horizontally. Walkable top y=0; solid deck to y=72 (24 game units), decorative open truss below to y=192 (64 game units). No rail above walkable line."
+    },
+    "capacitor": {
+      "path": "assets/environment/furnace-terrain/capacitor.webp",
+      "native_size": [
+        128,
+        128
+      ],
+      "game_visual_size": [
+        28,
+        28
+      ],
+      "native_root": [
+        64,
+        64
+      ],
+      "bytes": 20850,
+      "alpha_bbox": [
+        7,
+        4,
+        120,
+        124
+      ],
+      "flat_top_native_row": 0,
+      "source": "qa/v08-terrain-art/sources/capacitor.png",
+      "source_crop": [
+        204,
+        171,
+        1049,
+        1068
+      ],
+      "game_root": [
+        14,
+        14
+      ],
+      "registration": "Pickup icon: centered anchor. Amber cell differentiates this from cyan repair icon."
+    }
+  },
+  "total_bytes": 971968
+}
