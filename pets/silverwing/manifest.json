@@ -1,0 +1,71 @@
+{
+  "name": "银翼",
+  "description": "银白装甲与蓝色能量面板的Q版机甲娘，认真又可爱的小搭档。",
+  "sprite_version": 2,
+  "spritesheet": "spritesheet.png",
+  "width": 1536,
+  "height": 2288,
+  "cell_width": 192,
+  "cell_height": 208,
+  "columns": 8,
+  "rows": [
+    {
+      "index": 0,
+      "state": "idle",
+      "frames": 6
+    },
+    {
+      "index": 1,
+      "state": "running-right",
+      "frames": 8
+    },
+    {
+      "index": 2,
+      "state": "running-left",
+      "frames": 8
+    },
+    {
+      "index": 3,
+      "state": "waving",
+      "frames": 4
+    },
+    {
+      "index": 4,
+      "state": "jumping",
+      "frames": 5
+    },
+    {
+      "index": 5,
+      "state": "failed",
+      "frames": 8
+    },
+    {
+      "index": 6,
+      "state": "waiting",
+      "frames": 6
+    },
+    {
+      "index": 7,
+      "state": "running",
+      "frames": 6
+    },
+    {
+      "index": 8,
+      "state": "review",
+      "frames": 6
+    },
+    {
+      "index": 9,
+      "state": "look-000-to-157.5",
+      "frames": 8
+    },
+    {
+      "index": 10,
+      "state": "look-180-to-337.5",
+      "frames": 8
+    }
+  ],
+  "sha256": "8f499a245fbb6a81ccf23b75562292ac39971ed221c534ac75437f610b63fa40",
+  "license": "MIT",
+  "note": "Asset metadata only; not a Codex installation manifest."
+}
