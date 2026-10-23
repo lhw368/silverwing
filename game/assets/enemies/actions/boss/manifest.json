@@ -1,0 +1,1097 @@
+{
+  "schema": "mecha-enemy-actions/1",
+  "enemy": "boss",
+  "source_facing": "left",
+  "canvas_px": [
+    768,
+    768
+  ],
+  "anchor_px": [
+    384,
+    710
+  ],
+  "anchor_fraction": [
+    0.5,
+    0.9244791666666666
+  ],
+  "flight_baseline_px": null,
+  "generation_method": "Built-in image_gen; distinct generated raster poses. No source-frame jitter substitutes.",
+  "extraction_method": "Connected-alpha isolation with nearest-silhouette debris assignment; alpha <=10 and isolated noise components under 6 pixels removed; crop, uniform Lanczos resize, root registration. No pixel painting.",
+  "animation_groups": {
+    "idle": {
+      "loop": true,
+      "frames": [
+        "idle/01.png",
+        "idle/02.png"
+      ],
+      "durations_ms": [
+        220,
+        220
+      ],
+      "fps": 4.545454545454546
+    },
+    "move": {
+      "loop": true,
+      "frames": [
+        "move/01.png",
+        "move/02.png",
+        "move/03.png"
+      ],
+      "durations_ms": [
+        140,
+        140,
+        140
+      ],
+      "fps": 7.142857142857142
+    },
+    "attack_sweep": {
+      "loop": false,
+      "frames": [
+        "attack_sweep/01.png",
+        "attack_sweep/02.png"
+      ],
+      "durations_ms": [
+        320,
+        180
+      ],
+      "fps": 4.0
+    },
+    "attack_charge": {
+      "loop": false,
+      "frames": [
+        "attack_charge/01.png",
+        "attack_charge/02.png"
+      ],
+      "durations_ms": [
+        360,
+        180
+      ],
+      "fps": 3.7037037037037037
+    },
+    "attack_wave": {
+      "loop": false,
+      "frames": [
+        "attack_wave/01.png",
+        "attack_wave/02.png"
+      ],
+      "durations_ms": [
+        420,
+        220
+      ],
+      "fps": 3.125
+    },
+    "hurt": {
+      "loop": false,
+      "frames": [
+        "hurt/01.png"
+      ],
+      "durations_ms": [
+        160
+      ],
+      "fps": 6.25
+    },
+    "death": {
+      "loop": false,
+      "frames": [
+        "death/01.png",
+        "death/02.png",
+        "death/03.png"
+      ],
+      "durations_ms": [
+        200,
+        240,
+        500
+      ],
+      "fps": 3.1914893617021276
+    }
+  },
+  "frames": [
+    {
+      "animation": "idle",
+      "frame": 1,
+      "path": "idle/01.png",
+      "duration_ms": 220,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/motion.png",
+      "source_image_size_px": [
+        1536,
+        1024
+      ],
+      "source_component": 3,
+      "source_alpha_bbox_xyxy": [
+        8,
+        86,
+        516,
+        477
+      ],
+      "source_native_bbox_height_px": 391,
+      "source_native_bbox_width_px": 508,
+      "source_registration_root_px": [
+        312,
+        476
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 1.12,
+      "actual_resize_scale_xy": [
+        1.1200787401574803,
+        1.1202046035805626
+      ],
+      "source_crop_resized_px": [
+        569,
+        438
+      ],
+      "paste_top_left_px": [
+        43,
+        273
+      ],
+      "output_alpha_bbox_xyxy": [
+        43,
+        273,
+        612,
+        711
+      ],
+      "output_alpha_height_px": 438,
+      "sha256": "e77103398d93aeba2f2f393f4bd191344f80f88c8bfe861927b870cc2218cbdf",
+      "nonzero_alpha_pixels": 160446
+    },
+    {
+      "animation": "idle",
+      "frame": 2,
+      "path": "idle/02.png",
+      "duration_ms": 220,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/motion.png",
+      "source_image_size_px": [
+        1536,
+        1024
+      ],
+      "source_component": 1,
+      "source_alpha_bbox_xyxy": [
+        519,
+        71,
+        1006,
+        478
+      ],
+      "source_native_bbox_height_px": 407,
+      "source_native_bbox_width_px": 487,
+      "source_registration_root_px": [
+        799,
+        477
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 1.12,
+      "actual_resize_scale_xy": [
+        1.1190965092402465,
+        1.1203931203931203
+      ],
+      "source_crop_resized_px": [
+        545,
+        456
+      ],
+      "paste_top_left_px": [
+        71,
+        255
+      ],
+      "output_alpha_bbox_xyxy": [
+        71,
+        255,
+        616,
+        711
+      ],
+      "output_alpha_height_px": 456,
+      "sha256": "11d9ccaf3c71254c047fb51bce3559f7c2350e2d41e0cca90191894c15e182e0",
+      "nonzero_alpha_pixels": 157354
+    },
+    {
+      "animation": "move",
+      "frame": 1,
+      "path": "move/01.png",
+      "duration_ms": 140,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/motion.png",
+      "source_image_size_px": [
+        1536,
+        1024
+      ],
+      "source_component": 2,
+      "source_alpha_bbox_xyxy": [
+        1015,
+        84,
+        1532,
+        478
+      ],
+      "source_native_bbox_height_px": 394,
+      "source_native_bbox_width_px": 517,
+      "source_registration_root_px": [
+        1294,
+        477
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 1.12,
+      "actual_resize_scale_xy": [
+        1.1199226305609284,
+        1.119289340101523
+      ],
+      "source_crop_resized_px": [
+        579,
+        441
+      ],
+      "paste_top_left_px": [
+        72,
+        270
+      ],
+      "output_alpha_bbox_xyxy": [
+        72,
+        270,
+        651,
+        711
+      ],
+      "output_alpha_height_px": 441,
+      "sha256": "e374a8063edba94d634392f072cf8280e72ed3ca812aa78bb603d65c235010e7",
+      "nonzero_alpha_pixels": 158648
+    },
+    {
+      "animation": "move",
+      "frame": 2,
+      "path": "move/02.png",
+      "duration_ms": 140,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/motion.png",
+      "source_image_size_px": [
+        1536,
+        1024
+      ],
+      "source_component": 15,
+      "source_alpha_bbox_xyxy": [
+        15,
+        548,
+        484,
+        959
+      ],
+      "source_native_bbox_height_px": 411,
+      "source_native_bbox_width_px": 469,
+      "source_registration_root_px": [
+        263,
+        958
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 1.12,
+      "actual_resize_scale_xy": [
+        1.1194029850746268,
+        1.119221411192214
+      ],
+      "source_crop_resized_px": [
+        525,
+        460
+      ],
+      "paste_top_left_px": [
+        106,
+        251
+      ],
+      "output_alpha_bbox_xyxy": [
+        106,
+        251,
+        631,
+        711
+      ],
+      "output_alpha_height_px": 460,
+      "sha256": "06bae1559b22cd5f8f9071622ecaca831764e57e28739586d4cbcf62705e9992",
+      "nonzero_alpha_pixels": 145723
+    },
+    {
+      "animation": "move",
+      "frame": 3,
+      "path": "move/03.png",
+      "duration_ms": 140,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/motion.png",
+      "source_image_size_px": [
+        1536,
+        1024
+      ],
+      "source_component": 16,
+      "source_alpha_bbox_xyxy": [
+        499,
+        557,
+        1022,
+        954
+      ],
+      "source_native_bbox_height_px": 397,
+      "source_native_bbox_width_px": 523,
+      "source_registration_root_px": [
+        790,
+        953
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 1.12,
+      "actual_resize_scale_xy": [
+        1.1204588910133844,
+        1.1209068010075567
+      ],
+      "source_crop_resized_px": [
+        586,
+        445
+      ],
+      "paste_top_left_px": [
+        58,
+        266
+      ],
+      "output_alpha_bbox_xyxy": [
+        58,
+        266,
+        644,
+        711
+      ],
+      "output_alpha_height_px": 445,
+      "sha256": "cb52b8229ffebe727f47445ba57b8010681f9035e7f23180e000485338ce37dd",
+      "nonzero_alpha_pixels": 157637
+    },
+    {
+      "animation": "attack_sweep",
+      "frame": 1,
+      "path": "attack_sweep/01.png",
+      "duration_ms": 320,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/attack.png",
+      "source_image_size_px": [
+        1536,
+        1024
+      ],
+      "source_component": 1,
+      "source_alpha_bbox_xyxy": [
+        35,
+        28,
+        498,
+        477
+      ],
+      "source_native_bbox_height_px": 449,
+      "source_native_bbox_width_px": 463,
+      "source_registration_root_px": [
+        275,
+        476
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 1.04,
+      "actual_resize_scale_xy": [
+        1.041036717062635,
+        1.0400890868596881
+      ],
+      "source_crop_resized_px": [
+        482,
+        467
+      ],
+      "paste_top_left_px": [
+        134,
+        244
+      ],
+      "output_alpha_bbox_xyxy": [
+        134,
+        244,
+        616,
+        711
+      ],
+      "output_alpha_height_px": 467,
+      "sha256": "e6b85958b7ee5867352ff6dd17e58d21617aa8e2460c4e65dc62b907863e452a",
+      "nonzero_alpha_pixels": 128960
+    },
+    {
+      "animation": "attack_sweep",
+      "frame": 2,
+      "path": "attack_sweep/02.png",
+      "duration_ms": 180,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/attack.png",
+      "source_image_size_px": [
+        1536,
+        1024
+      ],
+      "source_component": 2,
+      "source_alpha_bbox_xyxy": [
+        502,
+        74,
+        1058,
+        470
+      ],
+      "source_native_bbox_height_px": 396,
+      "source_native_bbox_width_px": 556,
+      "source_registration_root_px": [
+        829,
+        469
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 1.12,
+      "actual_resize_scale_xy": [
+        1.120503597122302,
+        1.121212121212121
+      ],
+      "source_crop_resized_px": [
+        623,
+        444
+      ],
+      "paste_top_left_px": [
+        18,
+        267
+      ],
+      "output_alpha_bbox_xyxy": [
+        18,
+        267,
+        641,
+        711
+      ],
+      "output_alpha_height_px": 444,
+      "sha256": "3cad79ee867baf3f0b83414cb130c7eed62df37d0733ac888601c2c3e60d053a",
+      "nonzero_alpha_pixels": 160195
+    },
+    {
+      "animation": "attack_charge",
+      "frame": 1,
+      "path": "attack_charge/01.png",
+      "duration_ms": 360,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/attack.png",
+      "source_image_size_px": [
+        1536,
+        1024
+      ],
+      "source_component": 3,
+      "source_alpha_bbox_xyxy": [
+        1068,
+        96,
+        1525,
+        477
+      ],
+      "source_native_bbox_height_px": 381,
+      "source_native_bbox_width_px": 457,
+      "source_registration_root_px": [
+        1314,
+        476
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 1.12,
+      "actual_resize_scale_xy": [
+        1.1203501094091903,
+        1.120734908136483
+      ],
+      "source_crop_resized_px": [
+        512,
+        427
+      ],
+      "paste_top_left_px": [
+        108,
+        284
+      ],
+      "output_alpha_bbox_xyxy": [
+        108,
+        284,
+        620,
+        711
+      ],
+      "output_alpha_height_px": 427,
+      "sha256": "4abd1fcbcd2b2e0fca2cea0d3b163cb258b287f56f4779267ec2eabdfd8d7c05",
+      "nonzero_alpha_pixels": 132759
+    },
+    {
+      "animation": "attack_charge",
+      "frame": 2,
+      "path": "attack_charge/02.png",
+      "duration_ms": 180,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/charge-contact.png",
+      "source_image_size_px": [
+        1556,
+        1011
+      ],
+      "source_component": 1,
+      "source_alpha_bbox_xyxy": [
+        22,
+        89,
+        1529,
+        940
+      ],
+      "source_native_bbox_height_px": 851,
+      "source_native_bbox_width_px": 1507,
+      "source_registration_root_px": [
+        864,
+        939
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 0.44,
+      "actual_resize_scale_xy": [
+        0.43994691439946915,
+        0.4394829612220917
+      ],
+      "source_crop_resized_px": [
+        663,
+        374
+      ],
+      "paste_top_left_px": [
+        14,
+        336
+      ],
+      "output_alpha_bbox_xyxy": [
+        14,
+        336,
+        677,
+        710
+      ],
+      "output_alpha_height_px": 374,
+      "sha256": "ee08607085f3283c12868c59b014bf54905f0802bee86cc5d384e81446971060",
+      "nonzero_alpha_pixels": 133160
+    },
+    {
+      "animation": "attack_wave",
+      "frame": 1,
+      "path": "attack_wave/01.png",
+      "duration_ms": 420,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/wave-windup.png",
+      "source_image_size_px": [
+        1556,
+        1011
+      ],
+      "source_component": 1,
+      "source_alpha_bbox_xyxy": [
+        183,
+        10,
+        1377,
+        997
+      ],
+      "source_native_bbox_height_px": 987,
+      "source_native_bbox_width_px": 1194,
+      "source_registration_root_px": [
+        835,
+        995
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 0.57,
+      "actual_resize_scale_xy": [
+        0.5703517587939698,
+        0.5704154002026343
+      ],
+      "source_crop_resized_px": [
+        681,
+        563
+      ],
+      "paste_top_left_px": [
+        12,
+        148
+      ],
+      "output_alpha_bbox_xyxy": [
+        12,
+        148,
+        693,
+        711
+      ],
+      "output_alpha_height_px": 563,
+      "sha256": "13d3cf47bda07fc216ba0749185e05f1b42edd1736ee39a0e0dea19f18bcdd3c",
+      "nonzero_alpha_pixels": 186847
+    },
+    {
+      "animation": "attack_wave",
+      "frame": 2,
+      "path": "attack_wave/02.png",
+      "duration_ms": 220,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/attack.png",
+      "source_image_size_px": [
+        1536,
+        1024
+      ],
+      "source_component": 14,
+      "source_alpha_bbox_xyxy": [
+        1040,
+        645,
+        1530,
+        966
+      ],
+      "source_native_bbox_height_px": 321,
+      "source_native_bbox_width_px": 490,
+      "source_registration_root_px": [
+        1326,
+        961
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 1.12,
+      "actual_resize_scale_xy": [
+        1.120408163265306,
+        1.1214953271028036
+      ],
+      "source_crop_resized_px": [
+        549,
+        360
+      ],
+      "paste_top_left_px": [
+        64,
+        356
+      ],
+      "output_alpha_bbox_xyxy": [
+        64,
+        356,
+        613,
+        716
+      ],
+      "output_alpha_height_px": 360,
+      "sha256": "ab413a63a9ee05c041a2f82941253c08f35c4bac0dd5d3d2b59277d3a2d67b5f",
+      "nonzero_alpha_pixels": 134474
+    },
+    {
+      "animation": "hurt",
+      "frame": 1,
+      "path": "hurt/01.png",
+      "duration_ms": 160,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/death.png",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": 3,
+      "source_alpha_bbox_xyxy": [
+        39,
+        33,
+        691,
+        641
+      ],
+      "source_native_bbox_height_px": 608,
+      "source_native_bbox_width_px": 652,
+      "source_registration_root_px": [
+        389,
+        640
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 0.8,
+      "actual_resize_scale_xy": [
+        0.8006134969325154,
+        0.7993421052631579
+      ],
+      "source_crop_resized_px": [
+        522,
+        486
+      ],
+      "paste_top_left_px": [
+        104,
+        225
+      ],
+      "output_alpha_bbox_xyxy": [
+        104,
+        225,
+        626,
+        711
+      ],
+      "output_alpha_height_px": 486,
+      "sha256": "fc26c2ba7c75f7981543818a727c3fb13037e08831f5d070350dfb8583c3d533",
+      "nonzero_alpha_pixels": 135029
+    },
+    {
+      "animation": "death",
+      "frame": 1,
+      "path": "death/01.png",
+      "duration_ms": 200,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/death.png",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": 16,
+      "source_alpha_bbox_xyxy": [
+        633,
+        199,
+        1238,
+        675
+      ],
+      "source_native_bbox_height_px": 476,
+      "source_native_bbox_width_px": 605,
+      "source_registration_root_px": [
+        997,
+        665
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 0.8,
+      "actual_resize_scale_xy": [
+        0.8,
+        0.8004201680672269
+      ],
+      "source_crop_resized_px": [
+        484,
+        381
+      ],
+      "paste_top_left_px": [
+        93,
+        337
+      ],
+      "output_alpha_bbox_xyxy": [
+        93,
+        337,
+        577,
+        718
+      ],
+      "output_alpha_height_px": 381,
+      "sha256": "78409998532f89d650e978f70f1179943f71942c6710c764e52745b4a203401d",
+      "nonzero_alpha_pixels": 120554
+    },
+    {
+      "animation": "death",
+      "frame": 2,
+      "path": "death/02.png",
+      "duration_ms": 240,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/death.png",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": 71,
+      "source_alpha_bbox_xyxy": [
+        13,
+        786,
+        644,
+        1168
+      ],
+      "source_native_bbox_height_px": 382,
+      "source_native_bbox_width_px": 631,
+      "source_registration_root_px": [
+        413,
+        1166
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 0.8,
+      "actual_resize_scale_xy": [
+        0.8003169572107766,
+        0.8010471204188482
+      ],
+      "source_crop_resized_px": [
+        505,
+        306
+      ],
+      "paste_top_left_px": [
+        64,
+        406
+      ],
+      "output_alpha_bbox_xyxy": [
+        64,
+        406,
+        569,
+        712
+      ],
+      "output_alpha_height_px": 306,
+      "sha256": "da0370189570d91fe9d2759de141537495d40ac1334106b5e2badf59568d1343",
+      "nonzero_alpha_pixels": 90576
+    },
+    {
+      "animation": "death",
+      "frame": 3,
+      "path": "death/03.png",
+      "duration_ms": 500,
+      "canvas_px": [
+        768,
+        768
+      ],
+      "anchor_px": [
+        384,
+        710
+      ],
+      "source_image": "sources/death.png",
+      "source_image_size_px": [
+        1254,
+        1254
+      ],
+      "source_component": 87,
+      "source_alpha_bbox_xyxy": [
+        625,
+        929,
+        1240,
+        1174
+      ],
+      "source_native_bbox_height_px": 245,
+      "source_native_bbox_width_px": 615,
+      "source_registration_root_px": [
+        1064,
+        1174
+      ],
+      "target_registration_root_px": [
+        384,
+        710
+      ],
+      "requested_uniform_scale": 0.8,
+      "actual_resize_scale_xy": [
+        0.8,
+        0.8
+      ],
+      "source_crop_resized_px": [
+        492,
+        196
+      ],
+      "paste_top_left_px": [
+        33,
+        514
+      ],
+      "output_alpha_bbox_xyxy": [
+        33,
+        514,
+        525,
+        710
+      ],
+      "output_alpha_height_px": 196,
+      "sha256": "53b5f08a6315e52701626dbb3eea7f62ec0f47712e5f80d2a8a34da63eeae8bc",
+      "nonzero_alpha_pixels": 61718
+    }
+  ],
+  "notes": [
+    "All images are RGBA, left-facing, isolated sprites with no adjacent character pixels.",
+    "Original game assets were only read and were not modified.",
+    "Recommended timing is advisory; retain existing AI windows and map attack windup/contact to their existing states.",
+    "attack_sweep, attack_charge, attack_wave are the original three moves, each exactly windup then contact; no fourth move."
+  ],
+  "base_action_groups": [
+    "idle",
+    "move",
+    "attack",
+    "hurt",
+    "death"
+  ],
+  "attack_move_keys": [
+    "attack_sweep",
+    "attack_charge",
+    "attack_wave"
+  ],
+  "actor": "boss",
+  "orientation": "left",
+  "frame_size": [
+    768,
+    768
+  ],
+  "root": [
+    384,
+    710
+  ],
+  "native_body_height": 447,
+  "animations": {
+    "idle": {
+      "loop": true,
+      "frames": [
+        "idle/01.webp",
+        "idle/02.webp"
+      ],
+      "durations_ms": [
+        220,
+        220
+      ],
+      "fps": 4.545454545454546
+    },
+    "move": {
+      "loop": true,
+      "frames": [
+        "move/01.webp",
+        "move/02.webp",
+        "move/03.webp"
+      ],
+      "durations_ms": [
+        140,
+        140,
+        140
+      ],
+      "fps": 7.142857142857142
+    },
+    "attack_sweep": {
+      "loop": false,
+      "frames": [
+        "attack_sweep/01.webp",
+        "attack_sweep/02.webp"
+      ],
+      "durations_ms": [
+        320,
+        180
+      ],
+      "fps": 4.0
+    },
+    "attack_charge": {
+      "loop": false,
+      "frames": [
+        "attack_charge/01.webp",
+        "attack_charge/02.webp"
+      ],
+      "durations_ms": [
+        360,
+        180
+      ],
+      "fps": 3.7037037037037037
+    },
+    "attack_wave": {
+      "loop": false,
+      "frames": [
+        "attack_wave/01.webp",
+        "attack_wave/02.webp"
+      ],
+      "durations_ms": [
+        420,
+        220
+      ],
+      "fps": 3.125
+    },
+    "hurt": {
+      "loop": false,
+      "frames": [
+        "hurt/01.webp"
+      ],
+      "durations_ms": [
+        160
+      ],
+      "fps": 6.25
+    },
+    "death": {
+      "loop": false,
+      "frames": [
+        "death/01.webp",
+        "death/02.webp",
+        "death/03.webp"
+      ],
+      "durations_ms": [
+        200,
+        240,
+        500
+      ],
+      "fps": 3.1914893617021276
+    }
+  }
+}
