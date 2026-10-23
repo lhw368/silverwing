@@ -1,0 +1,721 @@
+{
+  "schema": "mecha-enemy-animation/1",
+  "actor": "coolant_boss",
+  "orientation": "left",
+  "frame_size": [
+    640,
+    640
+  ],
+  "root": [
+    320,
+    600
+  ],
+  "native_body_height": 400,
+  "canvas_px": [
+    640,
+    640
+  ],
+  "anchor_px": [
+    320,
+    600
+  ],
+  "target_body_height": 265,
+  "animations": {
+    "idle": {
+      "frames": [
+        "idle/01.webp",
+        "idle/02.webp"
+      ],
+      "fps": 4.3478260869565215,
+      "durations_ms": [
+        230,
+        230
+      ],
+      "loop": true
+    },
+    "move": {
+      "frames": [
+        "move/01.webp",
+        "move/02.webp",
+        "move/03.webp"
+      ],
+      "fps": 6.666666666666667,
+      "durations_ms": [
+        150,
+        150,
+        150
+      ],
+      "loop": true
+    },
+    "attack_sweep": {
+      "frames": [
+        "attack_sweep/01.webp",
+        "attack_sweep/02.webp"
+      ],
+      "fps": 4.0,
+      "durations_ms": [
+        320,
+        180
+      ],
+      "loop": false
+    },
+    "attack_charge": {
+      "frames": [
+        "attack_charge/01.webp",
+        "attack_charge/02.webp"
+      ],
+      "fps": 3.7037037037037037,
+      "durations_ms": [
+        360,
+        180
+      ],
+      "loop": false
+    },
+    "attack_wave": {
+      "frames": [
+        "attack_wave/01.webp",
+        "attack_wave/02.webp"
+      ],
+      "fps": 3.125,
+      "durations_ms": [
+        420,
+        220
+      ],
+      "loop": false
+    },
+    "hurt": {
+      "frames": [
+        "hurt/01.webp"
+      ],
+      "fps": 6.25,
+      "durations_ms": [
+        160
+      ],
+      "loop": false
+    },
+    "death": {
+      "frames": [
+        "death/01.webp",
+        "death/02.webp",
+        "death/03.webp"
+      ],
+      "fps": 3.1914893617021276,
+      "durations_ms": [
+        200,
+        240,
+        500
+      ],
+      "loop": false
+    }
+  },
+  "animation_groups": {
+    "idle": {
+      "frames": [
+        "idle/01.webp",
+        "idle/02.webp"
+      ],
+      "fps": 4.3478260869565215,
+      "durations_ms": [
+        230,
+        230
+      ],
+      "loop": true
+    },
+    "move": {
+      "frames": [
+        "move/01.webp",
+        "move/02.webp",
+        "move/03.webp"
+      ],
+      "fps": 6.666666666666667,
+      "durations_ms": [
+        150,
+        150,
+        150
+      ],
+      "loop": true
+    },
+    "attack_sweep": {
+      "frames": [
+        "attack_sweep/01.webp",
+        "attack_sweep/02.webp"
+      ],
+      "fps": 4.0,
+      "durations_ms": [
+        320,
+        180
+      ],
+      "loop": false
+    },
+    "attack_charge": {
+      "frames": [
+        "attack_charge/01.webp",
+        "attack_charge/02.webp"
+      ],
+      "fps": 3.7037037037037037,
+      "durations_ms": [
+        360,
+        180
+      ],
+      "loop": false
+    },
+    "attack_wave": {
+      "frames": [
+        "attack_wave/01.webp",
+        "attack_wave/02.webp"
+      ],
+      "fps": 3.125,
+      "durations_ms": [
+        420,
+        220
+      ],
+      "loop": false
+    },
+    "hurt": {
+      "frames": [
+        "hurt/01.webp"
+      ],
+      "fps": 6.25,
+      "durations_ms": [
+        160
+      ],
+      "loop": false
+    },
+    "death": {
+      "frames": [
+        "death/01.webp",
+        "death/02.webp",
+        "death/03.webp"
+      ],
+      "fps": 3.1914893617021276,
+      "durations_ms": [
+        200,
+        240,
+        500
+      ],
+      "loop": false
+    }
+  },
+  "recovery_pose": {
+    "action": "attack_charge",
+    "frame_index": 0,
+    "note": "Clean low crouch, no baked effects"
+  },
+  "emitters": {
+    "attack_charge": [
+      null,
+      {
+        "name": "cold_disc",
+        "point_px": [
+          13,
+          516
+        ],
+        "direction": [
+          -1,
+          0
+        ],
+        "note": "Visible low horizontal drill tip; floor offset -55.65px at body height265."
+      }
+    ]
+  },
+  "generation_method": "Built-in image_gen. Fifteen distinct articulated generated raster poses.",
+  "provenance": "qa/coolant-boss-art-source/prompts.json",
+  "extraction_method": "Connected alpha silhouette isolation, alpha<=8 cleanup, uniform Lanczos downsampling, explicit source root registration. Never flipped.",
+  "frames": [
+    {
+      "action": "idle",
+      "frame_index": 0,
+      "path": "idle/01.webp",
+      "source": "qa/coolant-boss-art-source/motion.png",
+      "source_component": 2,
+      "source_bbox": [
+        19,
+        57,
+        446,
+        515
+      ],
+      "source_root": [
+        240,
+        514
+      ],
+      "scale": 0.875,
+      "paste_xy": [
+        127,
+        200
+      ],
+      "resized_size": [
+        374,
+        401
+      ],
+      "alpha_bbox": [
+        127,
+        200,
+        501,
+        601
+      ],
+      "sha256": "045829b8f256165e7a1b531d24d7544de943dbe9175391efc0767612174c4643"
+    },
+    {
+      "action": "idle",
+      "frame_index": 1,
+      "path": "idle/02.webp",
+      "source": "qa/coolant-boss-art-source/motion.png",
+      "source_component": 3,
+      "source_bbox": [
+        498,
+        67,
+        902,
+        516
+      ],
+      "source_root": [
+        726,
+        515
+      ],
+      "scale": 0.875,
+      "paste_xy": [
+        120,
+        208
+      ],
+      "resized_size": [
+        354,
+        393
+      ],
+      "alpha_bbox": [
+        120,
+        208,
+        474,
+        601
+      ],
+      "sha256": "daa34a57f4a3b39c5f2c225b15669206e3a8ce1ff42697798b323b911abbb72f"
+    },
+    {
+      "action": "move",
+      "frame_index": 0,
+      "path": "move/01.webp",
+      "source": "qa/coolant-boss-art-source/motion.png",
+      "source_component": 1,
+      "source_bbox": [
+        953,
+        54,
+        1419,
+        514
+      ],
+      "source_root": [
+        1200,
+        514
+      ],
+      "scale": 0.875,
+      "paste_xy": [
+        104,
+        198
+      ],
+      "resized_size": [
+        408,
+        402
+      ],
+      "alpha_bbox": [
+        104,
+        198,
+        512,
+        600
+      ],
+      "sha256": "7ea37089bc20777fec210cc462e4984c69c6e675293bb608745ec8279ff4b30e"
+    },
+    {
+      "action": "move",
+      "frame_index": 1,
+      "path": "move/02.webp",
+      "source": "qa/coolant-boss-art-source/motion.png",
+      "source_component": 5,
+      "source_bbox": [
+        18,
+        567,
+        447,
+        1028
+      ],
+      "source_root": [
+        245,
+        1028
+      ],
+      "scale": 0.875,
+      "paste_xy": [
+        121,
+        197
+      ],
+      "resized_size": [
+        375,
+        403
+      ],
+      "alpha_bbox": [
+        121,
+        197,
+        496,
+        600
+      ],
+      "sha256": "d0804a0b01dd3cbf41b2f05c05b9c02724c80217da62edc37063c55db0ece777"
+    },
+    {
+      "action": "move",
+      "frame_index": 2,
+      "path": "move/03.webp",
+      "source": "qa/coolant-boss-art-source/motion.png",
+      "source_component": 6,
+      "source_bbox": [
+        494,
+        567,
+        948,
+        1027
+      ],
+      "source_root": [
+        728,
+        1027
+      ],
+      "scale": 0.875,
+      "paste_xy": [
+        115,
+        198
+      ],
+      "resized_size": [
+        397,
+        402
+      ],
+      "alpha_bbox": [
+        115,
+        198,
+        512,
+        600
+      ],
+      "sha256": "06ec18d2e0fb8e4a5b929a5eb58299bda54ec333ffc611388303b7833ffab530"
+    },
+    {
+      "action": "hurt",
+      "frame_index": 0,
+      "path": "hurt/01.webp",
+      "source": "qa/coolant-boss-art-source/motion.png",
+      "source_component": 7,
+      "source_bbox": [
+        976,
+        595,
+        1424,
+        1023
+      ],
+      "source_root": [
+        1232,
+        1023
+      ],
+      "scale": 0.875,
+      "paste_xy": [
+        96,
+        226
+      ],
+      "resized_size": [
+        392,
+        374
+      ],
+      "alpha_bbox": [
+        96,
+        226,
+        488,
+        600
+      ],
+      "sha256": "ff12e176455c2bb4596ac990d93cb0c90f32a0878a1100e9613ca9cc3254431f"
+    },
+    {
+      "action": "attack_sweep",
+      "frame_index": 0,
+      "path": "attack_sweep/01.webp",
+      "source": "qa/coolant-boss-art-source/attack.png",
+      "source_component": 1,
+      "source_bbox": [
+        40,
+        75,
+        481,
+        501
+      ],
+      "source_root": [
+        250,
+        501
+      ],
+      "scale": 0.94,
+      "paste_xy": [
+        123,
+        200
+      ],
+      "resized_size": [
+        415,
+        400
+      ],
+      "alpha_bbox": [
+        123,
+        200,
+        538,
+        600
+      ],
+      "sha256": "e0c0783ec8daad7028fe527a5621c7c966bbe466be0a4a8665f4052bc58f6d90"
+    },
+    {
+      "action": "attack_sweep",
+      "frame_index": 1,
+      "path": "attack_sweep/02.webp",
+      "source": "qa/coolant-boss-art-source/attack.png",
+      "source_component": 2,
+      "source_bbox": [
+        468,
+        105,
+        1010,
+        498
+      ],
+      "source_root": [
+        766,
+        498
+      ],
+      "scale": 0.94,
+      "paste_xy": [
+        40,
+        231
+      ],
+      "resized_size": [
+        509,
+        369
+      ],
+      "alpha_bbox": [
+        40,
+        231,
+        549,
+        600
+      ],
+      "sha256": "7f36d08c33900a51563c406b3eb40e4fe4b13d9a6ac8bfeed8e3c90d15efc8df"
+    },
+    {
+      "action": "attack_charge",
+      "frame_index": 0,
+      "path": "attack_charge/01.webp",
+      "source": "qa/coolant-boss-art-source/attack.png",
+      "source_component": 3,
+      "source_bbox": [
+        1014,
+        159,
+        1414,
+        496
+      ],
+      "source_root": [
+        1228,
+        496
+      ],
+      "scale": 0.94,
+      "paste_xy": [
+        119,
+        283
+      ],
+      "resized_size": [
+        376,
+        317
+      ],
+      "alpha_bbox": [
+        119,
+        283,
+        495,
+        600
+      ],
+      "sha256": "dcd04a026ede2cdaa6efe07437ad86afabad860efec4db8de62c92b2f2d029fa"
+    },
+    {
+      "action": "attack_charge",
+      "frame_index": 1,
+      "path": "attack_charge/02.webp",
+      "source": "qa/coolant-boss-art-source/charge-low.png",
+      "source_component": 1,
+      "source_bbox": [
+        40,
+        484,
+        1112,
+        1194
+      ],
+      "source_root": [
+        655,
+        1194
+      ],
+      "scale": 0.5,
+      "paste_xy": [
+        12,
+        245
+      ],
+      "resized_size": [
+        536,
+        355
+      ],
+      "alpha_bbox": [
+        12,
+        245,
+        548,
+        600
+      ],
+      "sha256": "4f1a881d475e4c5f08c47f7f393dee1031eb3346518bf6bc03ffd1e2daed2878"
+    },
+    {
+      "action": "attack_wave",
+      "frame_index": 0,
+      "path": "attack_wave/01.webp",
+      "source": "qa/coolant-boss-art-source/attack.png",
+      "source_component": 6,
+      "source_bbox": [
+        540,
+        520,
+        993,
+        1019
+      ],
+      "source_root": [
+        773,
+        1019
+      ],
+      "scale": 0.94,
+      "paste_xy": [
+        101,
+        131
+      ],
+      "resized_size": [
+        426,
+        469
+      ],
+      "alpha_bbox": [
+        101,
+        131,
+        527,
+        600
+      ],
+      "sha256": "2cf69a2c7de3c83ab4be8e9854eeff3f46fa4c95de954a030426fbcdfb9b8175"
+    },
+    {
+      "action": "attack_wave",
+      "frame_index": 1,
+      "path": "attack_wave/02.webp",
+      "source": "qa/coolant-boss-art-source/attack.png",
+      "source_component": 7,
+      "source_bbox": [
+        1005,
+        632,
+        1431,
+        1024
+      ],
+      "source_root": [
+        1230,
+        1023
+      ],
+      "scale": 0.94,
+      "paste_xy": [
+        108,
+        232
+      ],
+      "resized_size": [
+        400,
+        368
+      ],
+      "alpha_bbox": [
+        108,
+        232,
+        508,
+        600
+      ],
+      "sha256": "e13bf9443468dfbe66998a9d192a7c2375dc952a086e8b1ed3168e918d283578"
+    },
+    {
+      "action": "death",
+      "frame_index": 0,
+      "path": "death/01.webp",
+      "source": "qa/coolant-boss-art-source/death.png",
+      "source_component": 1,
+      "source_bbox": [
+        27,
+        143,
+        660,
+        650
+      ],
+      "source_root": [
+        376,
+        650
+      ],
+      "scale": 0.62,
+      "paste_xy": [
+        104,
+        286
+      ],
+      "resized_size": [
+        392,
+        314
+      ],
+      "alpha_bbox": [
+        104,
+        286,
+        496,
+        600
+      ],
+      "sha256": "30e7beaf9ba1295ef2316522cfa7303e1575ed5ab332abdb49fa41fa61bd5ce9"
+    },
+    {
+      "action": "death",
+      "frame_index": 1,
+      "path": "death/02.webp",
+      "source": "qa/coolant-boss-art-source/death.png",
+      "source_component": 2,
+      "source_bbox": [
+        669,
+        266,
+        1418,
+        657
+      ],
+      "source_root": [
+        1060,
+        657
+      ],
+      "scale": 0.62,
+      "paste_xy": [
+        78,
+        358
+      ],
+      "resized_size": [
+        464,
+        242
+      ],
+      "alpha_bbox": [
+        78,
+        358,
+        542,
+        600
+      ],
+      "sha256": "e8834b869c4a81bd451625fb21f71f5b3337aa9b0c266189686b86315393c23d"
+    },
+    {
+      "action": "death",
+      "frame_index": 2,
+      "path": "death/03.webp",
+      "source": "qa/coolant-boss-art-source/death.png",
+      "source_component": 7,
+      "source_bbox": [
+        1429,
+        369,
+        2156,
+        659
+      ],
+      "source_root": [
+        1810,
+        659
+      ],
+      "scale": 0.62,
+      "paste_xy": [
+        84,
+        420
+      ],
+      "resized_size": [
+        451,
+        180
+      ],
+      "alpha_bbox": [
+        84,
+        420,
+        535,
+        600
+      ],
+      "sha256": "19c3dcbc38d5580ce622cea6990ce11fc6acda3e8cd9c1d622879a2aae791048"
+    }
+  ]
+}
